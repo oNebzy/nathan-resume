@@ -8,7 +8,7 @@ const Skills = () => {
           <p className='text-[#7b857f] italic font-semibold inline border-b-4 border-[#358f60] mt-[20px] text-2xl'>{'Skills & Experience'}</p>
         </div>
         <div>
-          <p className='text-[#637269] mt-3'>{'//'} The scope of my experience has given my the opportunity to work with multiple technologies. Here are the ones I've used recently:</p>
+          <p className='text-[#637269] mt-3'>{'//'} The scope of my experience has given me the opportunity to work with multiple technologies. Here are the ones I've used recently:</p>
         </div>
       </div>
     </div>
