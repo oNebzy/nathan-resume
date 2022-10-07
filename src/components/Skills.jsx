@@ -62,21 +62,21 @@ const Skills = () => {
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly  hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={css} className="max-h-10"></img>
+              <img src={css} alt={""} className="max-h-10"></img>
             </div>
             <div>CSS</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={Dart} className="max-h-10"></img>
+              <img src={Dart} alt={""} className="max-h-10"></img>
             </div>
             <div>Dart</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={eas} className="max-h-10"></img>
+              <img src={eas} alt={""} className="max-h-10"></img>
             </div>
             <div>EAS</div>
           </div>
@@ -91,28 +91,28 @@ const Skills = () => {
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={expo} className="max-h-10"></img>
+              <img src={expo} alt={""} className="max-h-10"></img>
             </div>
             <div>expo</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={firebase} className="max-h-10"></img>
+              <img src={firebase} alt={""} className="max-h-10"></img>
             </div>
             <div>firebase</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={git} className="max-h-10"></img>
+              <img src={git} alt={""} className="max-h-10"></img>
             </div>
             <div>git</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={html} className="max-h-10"></img>
+              <img src={html} alt={""} className="max-h-10"></img>
             </div>
             <div>html</div>
           </div>
@@ -127,56 +127,56 @@ const Skills = () => {
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={java} className="max-h-10"></img>
+              <img src={java} alt={""} className="max-h-10"></img>
             </div>
             <div>java</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={javascript} className="max-h-10"></img>
+              <img src={javascript} alt={""} className="max-h-10"></img>
             </div>
             <div>javascript</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={jira} className="max-h-10"></img>
+              <img src={jira} alt={""} className="max-h-10"></img>
             </div>
             <div>jira</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={mongo} className="max-h-10"></img>
+              <img src={mongo} alt={""} className="max-h-10"></img>
             </div>
             <div>mongo</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={MUI} className="max-h-10"></img>
+              <img src={MUI} alt={""} className="max-h-10"></img>
             </div>
             <div>MUI</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={netlify} className="max-h-10"></img>
+              <img src={netlify} alt={""} className="max-h-10"></img>
             </div>
             <div>netlify</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={npm} className="max-h-10"></img>
+              <img src={npm} alt={""} className="max-h-10"></img>
             </div>
             <div>npm</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={react} className="max-h-10"></img>
+              <img src={react} alt={""} className="max-h-10"></img>
             </div>
             <div>react</div>
           </div>
@@ -191,63 +191,63 @@ const Skills = () => {
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={Sass} className="max-h-10"></img>
+              <img src={Sass} alt={""} className="max-h-10"></img>
             </div>
             <div>Sass</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={stripe} className="max-h-10"></img>
+              <img src={stripe} alt={""} className="max-h-10"></img>
             </div>
             <div>stripe</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={tailwind} className="max-h-10"></img>
+              <img src={tailwind} alt={""} className="max-h-10"></img>
             </div>
             <div>tailwind</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={Typescript} className="max-h-10"></img>
+              <img src={Typescript} alt={""} className="max-h-10"></img>
             </div>
             <div>Typescript</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={VScode} className="max-h-10"></img>
+              <img src={VScode} alt={""} className="max-h-10"></img>
             </div>
             <div>VScode</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={workato} className="max-h-10"></img>
+              <img src={workato} alt={""} className="max-h-10"></img>
             </div>
             <div>workato</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={xcode} className="max-h-10"></img>
+              <img src={xcode} alt={""} className="max-h-10"></img>
             </div>
             <div>xcode</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={yarn} className="max-h-10"></img>
+              <img src={yarn} alt={""} className="max-h-10"></img>
             </div>
             <div>yarn</div>
           </div>
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-full flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
-              <img src={zapier} className="max-h-10"></img>
+              <img src={zapier} alt={""} className="max-h-10"></img>
             </div>
             <div>zapier</div>
           </div>
