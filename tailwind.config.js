@@ -8,7 +8,7 @@ module.exports = {
       },
       animation: {
         wiggle: 'wiggle .5s ease-in-out infinite',
-        jiggle: 'jiggle .6s infinite'
+        jiggle: 'jiggle .5s infinite'
       },
       keyframes: {
         wiggle: {
@@ -16,9 +16,9 @@ module.exports = {
           '50%': { transform: 'rotate(3deg)' },
         },
         jiggle: {
-          '0%, 100%': { transform: 'translateY(-15%) rotate(-15deg)'},
-          '50%': { transform: 'translateY(5%) rotate(-15deg)' },
-          '25%, 75%': {transform: 'rotate(10deg)'}
+          '0%, 100%': { transform: 'translateY(-15%) rotate(-12deg)'},
+          '50%': { transform: 'translateY(5%) rotate(-12deg)' },
+          '25%, 75%': {transform: 'rotate(8deg)'}
         }
       }
     },
