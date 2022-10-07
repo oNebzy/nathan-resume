@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <div name='Home' className='w-full h-screen bg-[#d3ece2]'>
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
+        <p className="font-Kaushanscript text-[#7b857f] mb-10">{'<intro>'}</p>
         <p className='text-[#7b857f] text-[20px]'>Hi, my name is</p>
         <h1 className='text-[#5B9F83] text-[42px] leading-9 md:leading-[80px] font-medium md:text-[82px]'>{'<'} Nathan Burd {'/>'}</h1>
         <h2 className='text-[#282c2f] text-3xl font-medium md:text-5xl'>A Mobile {'&'} Front-end Developer.</h2>
@@ -22,6 +23,7 @@ const Home = () => {
             <HiArrowNarrowRight className='ml-2 transition group-hover:rotate-90 duration-[400ms]'/>
           </button>
         </div>
+        <p className="font-Kaushanscript text-[#7b857f] mt-10">{'<intro/>'}</p>
       </div>
     </div>
   )
