@@ -32,7 +32,7 @@ import zapier from "../assets/logos/zapier.png";
 
 const Skills = () => {
   return (
-    <div name="Skills" className="w-full h-screen bg-[#d3ece2]">
+    <div name="Skills" className="w-full min-h-screen bg-[#d3ece2]">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col h-full">
         {/* header container */}
         <div className="mt-[20px]">
@@ -54,12 +54,12 @@ const Skills = () => {
           <p className="mt-6 text-[#637269]">
             {"//"} These are the technologies I've worked with:
           </p>
-          <p>need new image for eclipse redux paper workato</p>
-          <p>need to add figma, DataStudio, BigQuery, Android Studio, intelliJ</p>
+          {/* <p>need new image for eclipse redux paper workato</p>
+          <p>need to add figma, DataStudio, BigQuery, Android Studio, intelliJ</p> */}
         </div>
 
         {/* tech tiles container */}
-        <div className="w-full grid grid-cols-5 md:grid-cols-8 gap-4 text-center text-white font-medium sm:text-sm text-xs">
+        <div className="w-full grid grid-cols-4 md:grid-cols-8 gap-4 text-center text-white font-medium sm:text-sm text-xs">
 
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly  hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
