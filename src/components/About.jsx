@@ -1,8 +1,5 @@
 import React from 'react'
 
-import me3 from '../assets/photos/me3.jpg'
-import me2 from '../assets/photos/me2.jpg'
-
 const About = () => {
   return (
     <div name="About" className='w-full h-screen bg-[#d3ece2]'>
