@@ -20,7 +20,7 @@ const About = () => {
           <p>
             In 2015, when I was a junior in high school, I was fortunate enough to take the first coding class every offered by my high school. 
             It was a simple game design course in Flash/ActionScript. The following year I took Game Design II, where I began to realize how much I loved coding.
-            It wouldnt be until the end of my Freshman year at WVU, when I realized petroleum engineering was not the career path for me and I switched to persue my degree in computer science.
+            It wouldnt be until the end of my Freshman year at WVU, when I realized petroleum engineering was not the career path for me and I switched majors to persue my degree in computer science.
           </p>
           <p className='mt-4'>
             Now I am very blessed to be doing what I love everyday. My focus has been on mobile and front-end development, where my passion for 

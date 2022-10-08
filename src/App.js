@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Work from "./components/Work";
 
 
 /**
@@ -15,11 +16,12 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="bg-[#E7EFE4]">
+    <div className="bg-[#d3ece2]">
       <Navbar/>
       <Home/>
       <About/>
       <Skills/>
+      <Work/>
     </div>
   );
 }

@@ -12,6 +12,7 @@
     }
     li {
         @apply px-4;
+        @apply py-1;
         @apply cursor-pointer;
     }
 }
