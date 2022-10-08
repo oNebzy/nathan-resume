@@ -16,11 +16,11 @@ const Navbar = () => {
 
       {/* full screen menu */}
       <ul className="hidden md:flex z-0">
-        <li className="hover:scale-110 ">Home</li>
-        <li className="hover:scale-110 ">About</li>
-        <li className="hover:scale-110 ">Skills</li>
-        <li className="hover:scale-110 ">My Work</li>
-        <li className="hover:scale-110 ">Contact</li>
+        <li className="hover:animate-wiggle">Home</li>
+        <li className="hover:animate-wiggle ">About</li>
+        <li className="hover:animate-wiggle ">Skills</li>
+        <li className="hover:animate-wiggle ">My Work</li>
+        <li className="hover:animate-wiggle ">Contact</li>
       </ul>
 
       {/* menu button */}
