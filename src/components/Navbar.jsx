@@ -16,11 +16,11 @@ const Navbar = () => {
 
       {/* full screen menu */}
       <ul className="hidden md:flex z-0">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>My Work</li>
-        <li>Contact</li>
+        <li className="hover:scale-110 ">Home</li>
+        <li className="hover:scale-110 ">About</li>
+        <li className="hover:scale-110 ">Skills</li>
+        <li className="hover:scale-110 ">My Work</li>
+        <li className="hover:scale-110 ">Contact</li>
       </ul>
 
       {/* menu button */}
@@ -33,11 +33,11 @@ const Navbar = () => {
 
       {/* mobile/small device menu */}
       <ul className={!temp ? 'hidden' : "md:hidden absolute top-[74px] right-0 px-4 py-2 bg-[#282c2f] flex flex-col items-center rounded-md"}>
-        <li className="py-1">Home</li>
-        <li className="py-1">About</li>
-        <li className="py-1">Skills</li>
-        <li className="py-1">My Work</li>
-        <li className="py-1">Contact</li>
+        <li className="hover:scale-110">Home</li>
+        <li className="hover:scale-110">About</li>
+        <li className="hover:scale-110">Skills</li>
+        <li className="hover:scale-110">My Work</li>
+        <li className="hover:scale-110">Contact</li>
       </ul>
 
     </div>
