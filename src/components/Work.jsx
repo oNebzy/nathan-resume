@@ -4,6 +4,10 @@ import gigupMobile from "../assets/projects/gigupmobile.png"
 import FingyCard from "../assets/projects/FingyCard.png"
 import KYKSCard from "../assets/projects/KYKSCard.png"
 
+import resume from "../assets/NathanBurd-Resume.pdf"
+import {TbFileExport} from 'react-icons/tb'
+
+
 const Work = () => {
   return (
     <div name="Work" className="w-full bg-[#d3ece2]">
@@ -37,12 +41,17 @@ const Work = () => {
           <div style={{backgroundImage: `url(${gigupMobile})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
-              <div className="pt-8 text-center">
+              {/* buttons */}
+              <div className="text-center sm:space-x-8">
                 <a href="https://www.gigup.me/" target="_blank" rel="noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Website</button>
+                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-sm">
+                    Website
+                  </button>
                 </a>
                 <a href="https://apps.apple.com/us/app/gigup/id1603502689" target="_blank" rel="noreferrer">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">App Store Listing</button>
+                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-sm">
+                    App Store
+                  </button>
                 </a>
               </div>
             </div>
@@ -66,7 +75,7 @@ const Work = () => {
           <div style={{backgroundImage: `url(${FingyCard})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
-              <div className="pt-8 text-center">
+              <div className="text-center sm:space-x-8">
                 <a href="https://fingy3d.com/" target="_blank" rel="noreferrer">
                   <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Website</button>
                 </a>
@@ -95,7 +104,7 @@ const Work = () => {
           <div style={{backgroundImage: `url(${KYKSCard})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
-              <div className="pt-8 text-center">
+              <div className="text-center sm:space-x-8">
                 <a href="https://kyksfirst.com/" target="_blank" rel="noreferrer">
                   <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Website</button>
                 </a>
@@ -115,7 +124,15 @@ const Work = () => {
             <p className="text-[282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
               Resume
             </p>
-            <p className="text-[#282c2f] font-normal italic text-md sm:text-xl ">To see all projects ive worked on & more information about my role in each, visit my resume below:</p>
+            <p className="text-[#282c2f] font-normal italic text-md sm:text-xl ">To see a list of all projects ive worked on & information about my role in each, please refer to my resume:</p>
+            <a href={resume} target="_blank" rel="noreferrer">
+              <button 
+                className='rounded text-[#282c2f] border-2 border-[#282c2f] px-4 py-2 mt-4 flex items-center hover:bg-[#5B9F83] hover:border-[#515854]'
+              >
+                My Resume
+                <TbFileExport className='ml-2'/>
+              </button>
+            </a>
           </div>
 
         {/* end project container */}

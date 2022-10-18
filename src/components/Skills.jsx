@@ -61,6 +61,7 @@ const Skills = () => {
 
         {/* tech tiles container */}
         <div className="w-full grid grid-cols-4 md:grid-cols-8 gap-3 text-center text-white font-medium sm:text-sm text-xs">
+          
           <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
             <div className="w-full h-full flex justify-center items-center">
               <img src={react} alt={""} className="max-h-10"></img>

@@ -17,7 +17,7 @@ const Home = () => {
         </p>
         <div>
           <button 
-            className='group text-[#282c2f] border-2 border-[#282c2f] px-4 py-2 mt-4 flex items-center hover:bg-[#5B9F83] hover:border-[#515854]'
+            className='rounded group text-[#282c2f] border-2 border-[#282c2f] px-4 py-2 mt-4 flex items-center hover:bg-[#5B9F83] hover:border-[#515854]'
             
           >
             View Skills
