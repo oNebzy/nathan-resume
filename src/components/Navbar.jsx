@@ -9,7 +9,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#282c2f] opacity-90 text-white">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#282c2f] opacity-90 text-white z-10">
       <div>
         <img src={NBlogo} alt="Logo" style={{width:'100px'}} />
       </div>

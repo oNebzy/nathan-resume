@@ -1,5 +1,6 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
+import sticker from '../assets/photos/sticker.png'
 
 const Home = () => {
   return (
@@ -23,8 +24,13 @@ const Home = () => {
             <HiArrowNarrowRight className='ml-2 transition group-hover:rotate-90 duration-[400ms]'/>
           </button>
         </div>
-        <p className="font-Kaushanscript text-[#7b857f] mt-10">{'<intro/>'}</p>
+        <p className="font-Kaushanscript text-[#7b857f] my-10">{'<intro/>'}</p>
+        
+        {/* <div className='border-b-2 border-[#282c2f] justify-center absolute bottom-40 w-full max-w-[1000px]'>
+          <img src={sticker} alt={""} className="max-h-64 absolute bottom-0 right-0"></img>
+        </div> */}
       </div>
+      
     </div>
   )
 }

@@ -16,3 +16,17 @@
         @apply cursor-pointer;
     }
 }
+
+.content-div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(105, 218, 142, 0.699),
+        hsla(152, 74%, 16%, 0.658)
+    )!important;
+}
