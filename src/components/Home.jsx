@@ -1,6 +1,6 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
-import sticker from '../assets/photos/sticker.png'
+//import sticker from '../assets/photos/sticker.png'
 
 const Home = () => {
   return (
