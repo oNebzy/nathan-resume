@@ -1,6 +1,7 @@
 import React, {useState, } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import NBlogo from "../assets/personalLogos/NBlogo.png";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
 
@@ -16,11 +17,31 @@ const Navbar = () => {
 
       {/* full screen menu */}
       <ul className="hidden md:flex z-0">
-        <li className="hover:animate-wiggle">Home</li>
-        <li className="hover:animate-wiggle ">About</li>
-        <li className="hover:animate-wiggle ">Skills</li>
-        <li className="hover:animate-wiggle ">My Work</li>
-        <li className="hover:animate-wiggle ">Contact</li>
+        <li className="hover:animate-wiggle">
+          <Link to="Home" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
+            Home
+          </Link>
+        </li>
+        <li className="hover:animate-wiggle">
+          <Link to="About" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
+            About
+          </Link>
+        </li>
+        <li className="hover:animate-wiggle">
+          <Link to="Skills" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
+            Skills
+          </Link>
+        </li>
+        <li className="hover:animate-wiggle">
+          <Link to="Work" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
+            My Work
+          </Link>
+        </li>
+        <li className="hover:animate-wiggle">
+          <Link to="Contact" smooth={true} duration={800} spy={true} offset={0} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
+            Contact
+          </Link>
+        </li>
       </ul>
 
       {/* menu button */}
@@ -33,11 +54,31 @@ const Navbar = () => {
 
       {/* mobile/small device menu */}
       <ul className={!temp ? 'hidden' : "md:hidden absolute top-[74px] right-0 px-4 py-2 bg-[#282c2f] flex flex-col items-center rounded-md"}>
-        <li className="hover:scale-110">Home</li>
-        <li className="hover:scale-110">About</li>
-        <li className="hover:scale-110">Skills</li>
-        <li className="hover:scale-110">My Work</li>
-        <li className="hover:scale-110">Contact</li>
+      <li className="hover:animate-wiggle">
+          <Link to="Home" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
+            Home
+          </Link>
+        </li>
+        <li className="hover:animate-wiggle">
+          <Link to="About" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
+            About
+          </Link>
+        </li>
+        <li className="hover:animate-wiggle">
+          <Link to="Skills" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
+            Skills
+          </Link>
+        </li>
+        <li className="hover:animate-wiggle">
+          <Link to="Work" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
+            My Work
+          </Link>
+        </li>
+        <li className="hover:animate-wiggle">
+          <Link to="Contact" smooth={true} duration={800} spy={true} offset={0} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
+            Contact
+          </Link>
+        </li>
       </ul>
 
     </div>

@@ -43,7 +43,7 @@ const Skills = () => {
           <p className="text-[#358f60] italic font-bold md:text-6xl text-4xl">
             Skills {"&"} Experience
           </p>
-          <p className="font-Kaushanscript text-[#7b857f]">{"<h1/>"}</p>
+          <p className="font-Kaushanscript text-[#7b857f]">{"</h1>"}</p>
         </div>
 
         {/* text container */}

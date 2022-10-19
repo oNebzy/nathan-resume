@@ -1,6 +1,7 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
-//import sticker from '../assets/photos/sticker.png'
+import { Link } from "react-scroll";
+
 
 const Home = () => {
   return (
@@ -18,13 +19,14 @@ const Home = () => {
         <div>
           <button 
             className='rounded group text-[#282c2f] border-2 border-[#282c2f] px-4 py-2 mt-4 flex items-center hover:bg-[#5B9F83] hover:border-[#515854]'
-            
           >
-            View Skills
-            <HiArrowNarrowRight className='ml-2 transition group-hover:rotate-90 duration-[400ms]'/>
+            <Link to="Skills" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500 flex items-center">
+              View Skills
+              <HiArrowNarrowRight className='ml-2 transition group-hover:rotate-90 duration-[400ms]'/>
+            </Link>
           </button>
         </div>
-        <p className="font-Kaushanscript text-[#7b857f] my-10">{'<intro/>'}</p>
+        <p className="font-Kaushanscript text-[#7b857f] my-10">{'</intro>'}</p>
         
         {/* <div className='border-b-2 border-[#282c2f] justify-center absolute bottom-40 w-full max-w-[1000px]'>
           <img src={sticker} alt={""} className="max-h-64 absolute bottom-0 right-0"></img>

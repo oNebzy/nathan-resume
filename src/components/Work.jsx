@@ -21,7 +21,7 @@ const Work = () => {
           <p className="text-[#358f60] italic font-bold md:text-6xl text-4xl">
             My Work
           </p>
-          <p className="font-Kaushanscript text-[#7b857f]">{"<h1/>"}</p>
+          <p className="font-Kaushanscript text-[#7b857f]">{"</h1>"}</p>
         </div>
         
         {/* project container */}
@@ -146,11 +146,11 @@ const Work = () => {
         <p className="text-[#358f60] italic font-bold md:text-3xl text-2xl">
           Personal Projects
         </p>
-        <p className="font-Kaushanscript text-[#7b857f] text-sm">{"<h2/>"}</p>
+        <p className="font-Kaushanscript text-[#7b857f] text-sm">{"</h2>"}</p>
       </div>
 
       {/* personal work */}
-      <div name="personalTiles" className="w-full grid grid-cols-2 md:grid-cols-3 sm:justify-items-center text-center">
+      <div name="personalTiles" className="w-full grid grid-cols-2 md:grid-cols-3 sm:justify-items-center text-center pb-20">
       <div>
           Scratch
         </div>

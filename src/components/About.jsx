@@ -9,7 +9,7 @@ const About = () => {
         <div className='mt-[20px]'>
           <p className="font-Kaushanscript text-[#7b857f] mb-1">{'<h1>'}</p>
           <p className='text-[#358f60] italic font-bold md:text-6xl text-4xl'>About Me</p>
-          <p className="font-Kaushanscript text-[#7b857f] mt-1">{'<h1/>'}</p>
+          <p className="font-Kaushanscript text-[#7b857f] mt-1">{'</h1>'}</p>
         </div>
 
         {/* body container */}
