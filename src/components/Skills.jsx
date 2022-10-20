@@ -62,126 +62,126 @@ const Skills = () => {
         {/* tech tiles container */}
         <div className="w-full grid grid-cols-4 md:grid-cols-8 gap-3 text-center text-white font-medium sm:text-sm text-xs">
           
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={react} alt={""} className="max-h-10"></img>
             </div>
             <div>React</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={react} alt={""} className="max-h-10"></img>
             </div>
             <div>React Native</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={javascript} alt={""} className="max-h-10"></img>
             </div>
             <div>JavaScript</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={Typescript} alt={""} className="max-h-10"></img>
             </div>
             <div>TypeScript</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={html} alt={""} className="max-h-10"></img>
             </div>
             <div>HTML</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly  hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly  hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={css} alt={""} className="max-h-10"></img>
             </div>
             <div>CSS</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={Sass} alt={""} className="max-h-10"></img>
             </div>
             <div>Sass</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={tailwind} alt={""} className="max-h-10"></img>
             </div>
             <div>Tailwind</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={java} alt={""} className="max-h-10"></img>
             </div>
             <div>Java</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={Dart} alt={""} className="max-h-10"></img>
             </div>
             <div>Dart</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={python} alt={""} className="max-h-10"></img>
             </div>
             <div>Python</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={redux} alt={""} className="max-h-10"></img>
             </div>
             <div>Redux</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={MUI} alt={""} className="max-h-10"></img>
             </div>
             <div>MUI</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={VScode} alt={""} className="max-h-10"></img>
             </div>
             <div>VSCode</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={xcode} alt={""} className="max-h-10"></img>
             </div>
             <div>Xcode</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={eclipse} alt={""} className="max-h-10"></img>
             </div>
             <div>Eclipse</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={androidStudio} alt={""} className="max-h-10"></img>
             </div>
             <div>Android Studio</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={intelliJ} alt={""} className="max-h-10"></img>
             </div>
@@ -189,98 +189,98 @@ const Skills = () => {
           </div>
 
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={expo} alt={""} className="max-h-10"></img>
             </div>
             <div>Expo</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={eas} alt={""} className="max-h-10"></img>
             </div>
             <div>EAS</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={npm} alt={""} className="max-h-10"></img>
             </div>
             <div>npm</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={yarn} alt={""} className="max-h-10"></img>
             </div>
             <div>Yarn</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={firebase} alt={""} className="max-h-10"></img>
             </div>
             <div>Firebase</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={netlify} alt={""} className="max-h-10"></img>
             </div>
             <div>Netlify</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={git} alt={""} className="max-h-10"></img>
             </div>
             <div>Git</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={jira} alt={""} className="max-h-10"></img>
             </div>
             <div>Jira</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={BigQuery} alt={""} className="max-h-10"></img>
             </div>
             <div>BiqQuery</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={DataStudio} alt={""} className="max-h-10"></img>
             </div>
             <div>Data Studio</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={figma} alt={""} className="max-h-10"></img>
             </div>
             <div>Figma</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={stripe} alt={""} className="max-h-10"></img>
             </div>
             <div>Stripe</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloR">
             <div className="w-full h-full flex justify-center items-center">
               <img src={workato} alt={""} className="max-h-10"></img>
             </div>
             <div>Workato</div>
           </div>
 
-          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jiggle">
+          <div className="bg-[#414d46] rounded-lg shadow-lg w-full h-[86px] flex flex-col p-2 justify-evenly hover:animate-jelloL">
             <div className="w-full h-full flex justify-center items-center">
               <img src={zapier} alt={""} className="max-h-10"></img>
             </div>

@@ -1,6 +1,6 @@
 import React from "react";
 //import test from "../assets/projects/test.png"
-import gigupMobile from "../assets/projects/gigupmobile.png"
+import GigUpCard from "../assets/projects/GigUpCard.png"
 import FingyCard from "../assets/projects/FingyCard.png"
 import KYKSCard from "../assets/projects/KYKSCard.png"
 
@@ -38,7 +38,7 @@ const Work = () => {
           </div>
   
           {/* content */}
-          <div style={{backgroundImage: `url(${gigupMobile})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
+          <div style={{backgroundImage: `url(${GigUpCard})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
               {/* buttons */}
@@ -66,35 +66,6 @@ const Work = () => {
           {/* header */}
           <div className="grid sm:grid-cols-1 grid-cols-2">
             <p className="text-[282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
-              Fingy3D
-            </p>
-            <p className="text-[#282c2f] font-normal text-md sm:text-xl text-right sm:text-left">Mobile & Web Development</p>
-          </div>
-  
-          {/* content */}
-          <div style={{backgroundImage: `url(${FingyCard})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="text-center sm:space-x-8">
-                <a href="https://fingy3d.com/" target="_blank" rel="noreferrer">
-                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Website</button>
-                </a>
-                <a href="https://app.fingy3d.com/start" target="_blank" rel="noreferrer">
-                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Application</button>
-                </a>
-              </div>
-            </div>
-            
-          </div>
-          
-          {/* spacer */}
-          <div className="my-4"></div>
-
-          {/* card 3 */}
-
-          {/* header */}
-          <div className="grid sm:grid-cols-1 grid-cols-2">
-            <p className="text-[282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
               KYKS Parent
             </p>
             <p className="text-[#282c2f] font-normal text-md sm:text-xl text-right sm:text-left pt-3 sm:pt-0">Mobile Development</p>
@@ -110,6 +81,35 @@ const Work = () => {
                 </a>
                 <a href="https://apps.apple.com/ie/app/kyks-parent/id1516542596" target="_blank" rel="noreferrer">
                   <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">App Store</button>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+          
+          {/* spacer */}
+          <div className="my-4"></div>
+
+          {/* card 3 */}
+
+          {/* header */}
+          <div className="grid sm:grid-cols-1 grid-cols-2">
+            <p className="text-[282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
+              Fingy3D
+            </p>
+            <p className="text-[#282c2f] font-normal text-md sm:text-xl text-right sm:text-left">Mobile & Web Development</p>
+          </div>
+  
+          {/* content */}
+          <div style={{backgroundImage: `url(${FingyCard})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
+            {/* Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="text-center sm:space-x-8">
+                <a href="https://fingy3d.com/" target="_blank" rel="noreferrer">
+                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Website</button>
+                </a>
+                <a href="https://app.fingy3d.com/start" target="_blank" rel="noreferrer">
+                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Application</button>
                 </a>
               </div>
             </div>
@@ -151,7 +151,7 @@ const Work = () => {
 
       {/* personal work */}
       <div name="personalTiles" className="w-full grid grid-cols-2 md:grid-cols-3 sm:justify-items-center text-center pb-20">
-      <div>
+        <div>
           Scratch
         </div>
         <div>
