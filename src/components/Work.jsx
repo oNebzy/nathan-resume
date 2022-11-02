@@ -18,7 +18,7 @@ const Work = () => {
         {/* header */}
         <div className="pb-8">
           <p className="font-Kaushanscript text-[#7b857f]">{"<h1>"}</p>
-          <p className="text-[#358f60] italic font-bold md:text-6xl text-4xl">
+          <p className="text-[#358f60] font-medium md:text-6xl text-4xl">
             My Work
           </p>
           <p className="font-Kaushanscript text-[#7b857f]">{"</h1>"}</p>
@@ -31,10 +31,10 @@ const Work = () => {
 
           {/* header */}
           <div className="grid sm:grid-cols-1 grid-cols-2">
-            <p className="text-[282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
+            <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
               GigUp
             </p>
-            <p className="text-[#282c2f] font-normal text-md sm:text-xl text-right sm:text-left">Mobile & Web Development</p>
+            <p className="text-[#515854] font-normal text-md sm:text-xl text-right sm:text-left">Mobile & Web Development</p>
           </div>
   
           {/* content */}
@@ -65,10 +65,10 @@ const Work = () => {
 
           {/* header */}
           <div className="grid sm:grid-cols-1 grid-cols-2">
-            <p className="text-[282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
+            <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
               KYKS Parent
             </p>
-            <p className="text-[#282c2f] font-normal text-md sm:text-xl text-right sm:text-left pt-3 sm:pt-0">Mobile Development</p>
+            <p className="text-[#515854] font-normal text-md sm:text-xl text-right sm:text-left pt-3 sm:pt-0">Mobile Development</p>
           </div>
   
           {/* content */}
@@ -94,10 +94,10 @@ const Work = () => {
 
           {/* header */}
           <div className="grid sm:grid-cols-1 grid-cols-2">
-            <p className="text-[282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
+            <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
               Fingy3D
             </p>
-            <p className="text-[#282c2f] font-normal text-md sm:text-xl text-right sm:text-left">Mobile & Web Development</p>
+            <p className="text-[#515854] font-normal text-md sm:text-xl text-right sm:text-left">Mobile & Web Development</p>
           </div>
   
           {/* content */}
@@ -121,10 +121,10 @@ const Work = () => {
 
           {/* Resume Container */}
           <div className="grid grid-cols-1">
-            <p className="text-[282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
+            <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
               Resume
             </p>
-            <p className="text-[#282c2f] font-normal italic text-md sm:text-xl ">To see a list of all projects ive worked on & information about my role in each, please refer to my resume:</p>
+            <p className="text-[#515854] font-normal italic text-md sm:text-lg">To see a list of all projects ive worked on & information about my role in each, please refer to my resume:</p>
             <a href={resume} target="_blank" rel="noreferrer">
               <button 
                 className='rounded text-[#282c2f] border-2 border-[#282c2f] px-4 py-2 mt-4 flex items-center hover:bg-[#5B9F83] hover:border-[#515854]'
@@ -141,25 +141,53 @@ const Work = () => {
       </div>
 
       {/* sub-header container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col my-[20px] ">
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col my-[20px] pb-8">
         <p className="font-Kaushanscript text-[#7b857f] text-sm">{"<h2>"}</p>
-        <p className="text-[#358f60] italic font-bold md:text-3xl text-2xl">
+        <p className="text-[#358f60] font-medium md:text-5xl text-3xl">
           Personal Projects
         </p>
         <p className="font-Kaushanscript text-[#7b857f] text-sm">{"</h2>"}</p>
       </div>
 
-      {/* personal work */}
-      <div name="personalTiles" className="w-full grid grid-cols-2 md:grid-cols-3 sm:justify-items-center text-center pb-20">
-        <div>
-          Scratch
+      {/* personal work web*/}
+      <div name="personalTiles" className="w-full grid sm:grid-cols-2 grid-cols-1 gap-10 mx-auto max-w-[1000px] px-8">
+        {/* project 1 */}
+        <div className="flex justify-items-center">
+          <div name="Scratch" className="p-4 rounded-xl border-4 border-[#282c2f] transition hover:scale-105 hover:shadow-lg hover:shadow-[#358f60] ease-in-out duration-300">
+            <p className="text-[#282c2f] italic font-bold text-3xl ">Scratch</p>
+            <p className="text-[#515854] font-normal text-xl pb-2" >Mobile Development</p>
+            <p className="text-[#fff] font-normal text-md rounded-lg p-3 bg-[#282c2f]">
+              A social recipe and cookbook app turning your kitchen into a Scratch kitchen. 
+              Scratch is a platform that empowers users to discover or create fun, tasty new recipes and cookbooks using a modern UI. 
+              Your next home cooked meal is just a swipe away with Scratch! 
+            </p>
+          </div>
         </div>
-        <div>
-          PickUp
+
+        {/* project 2 */}
+        <div className="flex justify-items-center ">
+          <div name="Scratch" className="p-4 rounded-xl border-4 border-[#282c2f] transition hover:scale-105 hover:shadow-lg hover:shadow-[#358f60] ease-in-out duration-300">
+          <p className="text-[#282c2f] italic font-bold text-3xl ">PickUp</p>
+            <p className="text-[#515854] font-normal text-xl pb-2" >Mobile & Web Development</p>
+            <p className="text-[#fff] font-normal text-md rounded-lg p-4 bg-[#282c2f]">
+              A web and mobile app designed to give athletes and sports enthusiasts the oppertunity to find pick up games of any sport in their local area.
+              I'm also currently developing a leagues/ranking feature and tournament feature to gamify the app before release.
+            </p>
+          </div>
         </div>
-        <div>
-          ToDo
+
+        {/* project 3 */}
+        <div className="flex justify-items-center">
+          <div name="Scratch" className="p-4 rounded-xl border-4 border-[#282c2f] transition hover:scale-105 hover:shadow-lg hover:shadow-[#358f60] ease-in-out duration-300">
+            <p className="text-[#282c2f] italic font-bold text-3xl ">ToDo</p>
+            <p className="text-[#515854] font-normal text-xl pb-2" >Mobile Development</p>
+            <p className="text-[#fff] font-normal text-md rounded-lg p-4 bg-[#282c2f]">
+              Organization and task management are crucial to keep my productivity high. I kept trying different task management/reminder apps and none of them ever felt right for me.
+              This led me to just develope my own personal one, catered to my specific needs that I use daily to keep my productivity at an all time high.
+            </p>
+          </div>
         </div>
+
       </div>
 
     </div>

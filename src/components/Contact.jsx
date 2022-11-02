@@ -11,7 +11,7 @@ const Contact = () => {
         {/* header */}
         <div className="pb-8">
           <p className="font-Kaushanscript text-[#7b857f]">{"<form>"}</p>
-          <p className="text-[#358f60] italic font-bold md:text-6xl text-4xl">
+          <p className="text-[#358f60] font-medium md:text-6xl text-4xl">
             Contact Me
           </p>
           <p className='text-[#282c2f] text-xl pt-2 font-medium'>Thanks for visiting my portfolio!</p>

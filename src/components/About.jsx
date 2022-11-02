@@ -8,7 +8,7 @@ const About = () => {
         {/* Header container */}
         <div className='mt-[20px]'>
           <p className="font-Kaushanscript text-[#7b857f] mb-1">{'<h1>'}</p>
-          <p className='text-[#358f60] italic font-bold md:text-6xl text-4xl'>About Me</p>
+          <p className='text-[#358f60] font-medium md:text-6xl text-4xl'>About Me</p>
           <p className="font-Kaushanscript text-[#7b857f] mt-1">{'</h1>'}</p>
         </div>
 
@@ -27,7 +27,7 @@ const About = () => {
             building outstanding mobile and web experiences for clients has flourished.  
           </p>
           <p className='mt-4'>
-            I would describe myself as a well-organized, outgoing person with a knack for problem solving. I enjoy snowboarding, playing soccer, and spending time with friends and family.
+            I would describe myself as a well-organized, outgoing person with a knack for problem solving. I enjoy snowboarding, playing soccer, working on personal projects and spending time with friends and family in my free time.
           </p>
         </div>
 
