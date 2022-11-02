@@ -124,7 +124,7 @@ const Work = () => {
             <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
               Resume
             </p>
-            <p className="text-[#515854] font-normal italic text-md sm:text-lg">To see a list of all projects ive worked on & information about my role in each, please refer to my resume:</p>
+            <p className="text-[#515854] font-normal italic text-md sm:text-lg">To see a complete list of all projects I've worked on, and information about my role in each, please refer to my resume:</p>
             <a href={resume} target="_blank" rel="noreferrer">
               <button 
                 className='rounded text-[#282c2f] border-2 border-[#282c2f] px-4 py-2 mt-4 flex items-center hover:bg-[#5B9F83] hover:border-[#515854]'

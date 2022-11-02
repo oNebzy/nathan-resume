@@ -18,12 +18,12 @@ const About = () => {
         </div>
         <div className='mt-4 text-[#515854] font-normal md:text-lg text-sm'>
           <p>
-            In 2015, when I was a junior in high school, I was fortunate enough to take the first coding class every offered by my high school. 
+            In 2015, when I was a junior in high school, I was fortunate enough to take the first coding class ever offered by my high school. 
             It was a simple game design course in Flash/ActionScript. The following year I took Game Design II, where I began to realize how much I loved coding.
-            It wouldnt be until the end of my Freshman year at WVU, when I realized petroleum engineering was not the career path for me and I switched majors to persue my degree in computer science.
+            It was at the end of my Freshman year at WVU when I realized that petroleum engineering was not the best career path for me and I switched majors to pursue my degree in computer science.
           </p>
           <p className='mt-4'>
-            Now I am very blessed to be doing what I love everyday. My focus has been on mobile and front-end development, where my passion for 
+            Now, I am very blessed to be doing what I love everyday. My focus has been on mobile and front-end development, where my passion for 
             building outstanding mobile and web experiences for clients has flourished.  
           </p>
           <p className='mt-4'>

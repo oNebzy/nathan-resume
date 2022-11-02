@@ -16,7 +16,7 @@ const Contact = () => {
           </p>
           <p className='text-[#282c2f] text-xl pt-2 font-medium'>Thanks for visiting my portfolio!</p>
           <p className='text-[#282c2f] text-lg pt-2'>
-            Fill out the form below or email me directly - <span className='font-semibold underline hover:text-[#5B9F83]'><a href="mailto: nathanburd.dev@gmail.com">nathanburd.dev@gmail.com</a></span>
+            Please complete the form below or email me directly - <span className='font-semibold underline hover:text-[#5B9F83]'><a href="mailto: nathanburd.dev@gmail.com">nathanburd.dev@gmail.com</a></span>
           </p>
 
           <form method="POST" action="https://getform.io/f/e4a5c553-57c4-44a6-8c3f-9d9bddc58109" className='flex flex-col w-full'>
