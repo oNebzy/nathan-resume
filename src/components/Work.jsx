@@ -7,6 +7,9 @@ import KYKSCard from "../assets/projects/KYKSCard.png"
 import resume from "../assets/NathanBurd-Resume.pdf"
 import {TbFileExport} from 'react-icons/tb'
 
+import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
+//import Jello from "react-reveal/Jello";
 
 const Work = () => {
   return (
@@ -17,11 +20,17 @@ const Work = () => {
 
         {/* header */}
         <div className="pb-8">
-          <p className="font-Kaushanscript text-[#7b857f]">{"<h1>"}</p>
-          <p className="text-[#358f60] font-medium md:text-6xl text-4xl">
-            My Work
-          </p>
-          <p className="font-Kaushanscript text-[#7b857f]">{"</h1>"}</p>
+          <Fade clear delay={400} duration={1200}>
+            <p className="font-Kaushanscript text-[#7b857f] mb-1">{'<h1>'}</p>
+          </Fade>
+          <Fade right delay={800} duration={1600} distance="40%">
+            <p className="text-[#358f60] font-medium md:text-6xl text-4xl">
+              My Work
+            </p>
+          </Fade>
+          <Fade clear delay={400} duration={1200}>
+            <p className="font-Kaushanscript text-[#7b857f] mt-1">{'</h1>'}</p>
+          </Fade>
         </div>
         
         {/* project container */}
@@ -31,32 +40,39 @@ const Work = () => {
 
           {/* header */}
           <div className="grid sm:grid-cols-1 grid-cols-2">
-            <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
-              GigUp
-            </p>
-            <p className="text-[#515854] font-normal text-md sm:text-xl text-right sm:text-left">Mobile & Web Development</p>
+            <Fade top delay={1200} duration={1200}>
+              <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
+                GigUp
+              </p>
+            </Fade>
+            <Fade top delay={1400} duration={1200}>
+              <p className="text-[#515854] font-normal text-md sm:text-xl text-right sm:text-left">Mobile & Web Development</p>
+            </Fade>
           </div>
-  
-          {/* content */}
-          <div style={{backgroundImage: `url(${GigUpCard})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              {/* buttons */}
-              <div className="text-center sm:space-x-8">
-                <a href="https://www.gigup.me/" target="_blank" rel="noreferrer">
-                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-sm">
-                    Website
-                  </button>
-                </a>
-                <a href="https://apps.apple.com/us/app/gigup/id1603502689" target="_blank" rel="noreferrer">
-                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-sm">
-                    App Store
-                  </button>
-                </a>
+
+          <Bounce right delay={1600} duration={1800}>
+            {/* content */}
+            <div style={{backgroundImage: `url(${GigUpCard})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
+              {/* Hover Effects */}
+              <div className="opacity-0 group-hover:opacity-100">
+                {/* buttons */}
+                <div className="text-center sm:space-x-8">
+                  <a href="https://www.gigup.me/" target="_blank" rel="noreferrer">
+                    <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-sm">
+                      Website
+                    </button>
+                  </a>
+                  <a href="https://apps.apple.com/us/app/gigup/id1603502689" target="_blank" rel="noreferrer">
+                    <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-sm">
+                      App Store
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
-            
-          </div>
+          </Bounce>
+  
+          
 
           {/* spacer */}
           <div className="my-4"></div>
@@ -65,28 +81,33 @@ const Work = () => {
 
           {/* header */}
           <div className="grid sm:grid-cols-1 grid-cols-2">
-            <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
-              KYKS Parent
-            </p>
-            <p className="text-[#515854] font-normal text-md sm:text-xl text-right sm:text-left pt-3 sm:pt-0">Mobile Development</p>
+            <Fade top delay={1200} duration={1200}>
+              <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
+                KYKS Parent
+              </p>
+            </Fade>
+            <Fade top delay={1200} duration={1200}>
+              <p className="text-[#515854] font-normal text-md sm:text-xl text-right sm:text-left pt-3 sm:pt-0">Mobile Development</p>
+            </Fade>
           </div>
   
           {/* content */}
-          <div style={{backgroundImage: `url(${KYKSCard})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="text-center sm:space-x-8">
-                <a href="https://kyksfirst.com/" target="_blank" rel="noreferrer">
-                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Website</button>
-                </a>
-                <a href="https://apps.apple.com/ie/app/kyks-parent/id1516542596" target="_blank" rel="noreferrer">
-                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">App Store</button>
-                </a>
+          <Bounce right delay={400} duration={1800}>
+            <div style={{backgroundImage: `url(${KYKSCard})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
+              {/* Hover Effects */}
+              <div className="opacity-0 group-hover:opacity-100">
+                <div className="text-center sm:space-x-8">
+                  <a href="https://kyksfirst.com/" target="_blank" rel="noreferrer">
+                    <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Website</button>
+                  </a>
+                  <a href="https://apps.apple.com/ie/app/kyks-parent/id1516542596" target="_blank" rel="noreferrer">
+                    <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">App Store</button>
+                  </a>
+                </div>
               </div>
             </div>
-            
-          </div>
-          
+          </Bounce>
+                    
           {/* spacer */}
           <div className="my-4"></div>
 
@@ -94,45 +115,57 @@ const Work = () => {
 
           {/* header */}
           <div className="grid sm:grid-cols-1 grid-cols-2">
-            <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
-              Fingy3D
-            </p>
-            <p className="text-[#515854] font-normal text-md sm:text-xl text-right sm:text-left">Mobile & Web Development</p>
+            <Fade top delay={400} duration={1200}>
+              <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
+                Fingy3D
+              </p>
+            </Fade>
+            <Fade top delay={400} duration={1200}>
+              <p className="text-[#515854] font-normal text-md sm:text-xl text-right sm:text-left">Mobile & Web Development</p>
+            </Fade>
           </div>
   
           {/* content */}
-          <div style={{backgroundImage: `url(${FingyCard})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="text-center sm:space-x-8">
-                <a href="https://fingy3d.com/" target="_blank" rel="noreferrer">
-                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Website</button>
-                </a>
-                <a href="https://app.fingy3d.com/start" target="_blank" rel="noreferrer">
-                  <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Application</button>
-                </a>
+          <Bounce right delay={400} duration={1800}>
+            <div style={{backgroundImage: `url(${FingyCard})`}} className=" sm:h-[440px] h-[160px] shadow-lg shadow-[#040c16] group container rounded-lg flex justify-center items-center mx-auto content-div">
+              {/* Hover Effects */}
+              <div className="opacity-0 group-hover:opacity-100">
+                <div className="text-center sm:space-x-8">
+                  <a href="https://fingy3d.com/" target="_blank" rel="noreferrer">
+                    <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Website</button>
+                  </a>
+                  <a href="https://app.fingy3d.com/start" target="_blank" rel="noreferrer">
+                    <button className="text-center rounded-full px-4 py-3 m-2 bg-[#282c2f] hover:text-[#98d1b4] text-white font-medium sm:text-lg text-md">Application</button>
+                  </a>
+                </div>
               </div>
             </div>
-            
-          </div>
+          </Bounce>
 
           {/* spacer */}
           <div className="my-4"></div>
 
           {/* Resume Container */}
           <div className="grid grid-cols-1">
-            <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
-              Resume
-            </p>
-            <p className="text-[#515854] font-normal italic text-md sm:text-lg">To see a complete list of all projects I've worked on, and information about my role in each, please refer to my resume:</p>
-            <a href={resume} target="_blank" rel="noreferrer">
-              <button 
-                className='rounded text-[#282c2f] border-2 border-[#282c2f] px-4 py-2 mt-4 flex items-center hover:bg-[#5B9F83] hover:border-[#515854]'
-              >
-                My Resume
-                <TbFileExport className='ml-2'/>
-              </button>
-            </a>
+            <Fade top delay={600} duration={1200}>
+              <p className="text-[#282c2f] italic font-bold md:text-4xl text-2xl pt-2 sm:pb-2">
+                Resume
+              </p>
+            </Fade>
+            <Fade top delay={600} duration={1200}>
+              <p className="text-[#515854] font-normal italic text-md sm:text-lg">To see a complete list of all projects I've worked on, and information about my role in each, please refer to my resume:</p>
+            </Fade>
+
+            <Fade right delay={800} duration={1200}>
+              <a href={resume} target="_blank" rel="noreferrer">
+                <button 
+                  className='rounded text-[#282c2f] border-2 border-[#282c2f] px-4 py-2 mt-4 flex items-center hover:bg-[#5B9F83] hover:border-[#515854]'
+                >
+                  My Resume
+                  <TbFileExport className='ml-2'/>
+                </button>
+              </a>
+            </Fade>
           </div>
 
         {/* end project container */}
@@ -142,11 +175,17 @@ const Work = () => {
 
       {/* sub-header container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col my-[20px] pb-8">
-        <p className="font-Kaushanscript text-[#7b857f] text-sm">{"<h2>"}</p>
-        <p className="text-[#358f60] font-medium md:text-5xl text-3xl">
-          Personal Projects
-        </p>
-        <p className="font-Kaushanscript text-[#7b857f] text-sm">{"</h2>"}</p>
+        <Fade clear delay={1000} duration={1200}>
+          <p className="font-Kaushanscript text-[#7b857f] mb-1">{'<h2>'}</p>
+        </Fade>
+        <Fade right delay={1200} duration={1600} distance="40%">
+          <p className="text-[#358f60] font-medium md:text-5xl text-3xl">
+            Personal Projects
+          </p>
+        </Fade>
+        <Fade clear delay={1000} duration={1200}>
+          <p className="font-Kaushanscript text-[#7b857f] mt-1">{'</h2>'}</p>
+        </Fade>
       </div>
 
       {/* personal work web*/}
