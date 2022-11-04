@@ -33,20 +33,20 @@ const About = () => {
           </div>
         </Fade>
         <div className='mt-4 text-[#515854] font-normal md:text-lg text-sm'>
-          <Fade clear delay={2400} duration={1400}>
+          <Fade clear delay={2000} duration={1400}>
             <p>
-              In 2015, when I was a junior in high school, I was fortunate enough to take the first coding class ever offered by my high school. 
+              When I was a junior in high school, I was fortunate enough to take the first coding class ever offered by my high school. 
               It was a simple game design course in Flash/ActionScript. The following year I took Game Design II, where I began to realize how much I loved coding.
               It was at the end of my Freshman year at WVU when I realized that petroleum engineering was not the best career path for me and I switched majors to pursue my degree in computer science.
             </p>
           </Fade>
-          <Fade clear delay={2800} duration={1400}>
+          <Fade clear delay={2200} duration={1400}>
             <p className='mt-4'>
               Now, I am very blessed to be doing what I love everyday. My focus has been on mobile and front-end development, where my passion for 
               building outstanding mobile and web experiences for clients has flourished.  
             </p>
           </Fade>
-          <Fade clear delay={3200} duration={1400}>
+          <Fade clear delay={2400} duration={1400}>
             <p className='mt-4'>
               I would describe myself as a well-organized, outgoing person with a knack for problem solving. I enjoy snowboarding, playing soccer, working on personal projects and spending time with friends and family in my free time.
             </p>

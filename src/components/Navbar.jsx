@@ -72,43 +72,46 @@ const Navbar = () => {
       
 
       {/* mobile/small device menu */}
-      <ul className={!temp ? 'hidden' : "md:hidden absolute top-[74px] right-0 px-4 py-2 bg-[#282c2f] flex flex-col items-center rounded-md"}>
-        <li className="hover:animate-wiggle">
-          <Fade right>
-            <Link to="Home" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
-              Home
-            </Link>
-          </Fade>
-        </li>     
-        <li className="hover:animate-wiggle">
-          <Fade right delay={200}>
-            <Link to="About" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
-              About
-            </Link>
-          </Fade>
-        </li>
-        <li className="hover:animate-wiggle">
-          <Fade right delay={400}>
-            <Link to="Skills" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
-              Skills
-            </Link>
-          </Fade>
-        </li>
-        <li className="hover:animate-wiggle">
-          <Fade right delay={600}>
-            <Link to="Work" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
-              My Work
-            </Link>
-          </Fade>
-        </li>
-        <li className="hover:animate-wiggle">
-          <Fade right delay={800}>
-            <Link to="Contact" smooth={true} duration={800} spy={true} offset={0} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500">
-              Contact
-            </Link>
-          </Fade>
-        </li>
-      </ul>
+      <Fade clear>
+        <ul className={!temp ? 'hidden' : "md:hidden absolute top-[74px] right-0 px-4 py-2 bg-[#282c2f] flex flex-col items-center rounded-md"}>
+          <li className="hover:animate-wiggle">
+            <Fade right>
+              <Link to="Home" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500" onClick={handleMenuClick}>
+                Home
+              </Link>
+            </Fade>
+          </li>     
+          <li className="hover:animate-wiggle">
+            <Fade right delay={200}>
+              <Link to="About" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500" onClick={handleMenuClick}>
+                About
+              </Link>
+            </Fade>
+          </li>
+          <li className="hover:animate-wiggle">
+            <Fade right delay={400}>
+              <Link to="Skills" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500" onClick={handleMenuClick}>
+                Skills
+              </Link>
+            </Fade>
+          </li>
+          <li className="hover:animate-wiggle">
+            <Fade right delay={600}>
+              <Link to="Work" smooth={true} duration={800} spy={true} offset={-100} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500" onClick={handleMenuClick}>
+                My Work
+              </Link>
+            </Fade>
+          </li>
+          <li className="hover:animate-wiggle">
+            <Fade right delay={800}>
+              <Link to="Contact" smooth={true} duration={800} spy={true} offset={0} activeClass="text-[#358f60] underline underline-offset-4" className="transition-all duration-500" onClick={handleMenuClick}>
+                Contact
+              </Link>
+            </Fade>
+          </li>
+        </ul>
+      </Fade>
+      
     </div>
   );
 };

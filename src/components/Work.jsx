@@ -192,41 +192,47 @@ const Work = () => {
       <div name="personalTiles" className="w-full grid sm:grid-cols-2 grid-cols-1 gap-10 mx-auto max-w-[1000px] px-8">
         {/* project 1 */}
         <div className="flex justify-items-center">
-          <div name="Scratch" className="p-4 rounded-xl border-4 border-[#282c2f] transition hover:scale-105 hover:shadow-lg hover:shadow-[#358f60] ease-in-out duration-300">
-            <p className="text-[#282c2f] italic font-bold sm:text-3xl text-2xl">Scratch</p>
-            <p className="text-[#515854] font-normal sm:text-xl text-lg pb-2" >Mobile Development</p>
-            <p className="text-[#fff] font-normal sm:text-base text-sm rounded-lg p-3 bg-[#282c2f]">
-              A social recipe and cookbook app turning your kitchen into a Scratch kitchen. 
-              Scratch is a platform that empowers users to discover or create fun, tasty new recipes and cookbooks using a modern UI. 
-              Your next home cooked meal is just a swipe away with Scratch! 
-            </p>
-          </div>
+          <Bounce left delay={1600} duration={1400}>
+            <div name="Scratch" className="p-4 rounded-xl border-4 border-[#282c2f] transition hover:scale-105 hover:shadow-lg hover:shadow-[#358f60] ease-in-out duration-300">
+              <p className="text-[#282c2f] italic font-bold sm:text-3xl text-2xl">Scratch</p>
+              <p className="text-[#515854] font-normal sm:text-xl text-lg pb-2" >Mobile Development</p>
+              <p className="text-[#fff] font-normal sm:text-base text-sm rounded-lg p-3 bg-[#282c2f]">
+                A social recipe and cookbook app turning your kitchen into a Scratch kitchen. 
+                Scratch is a platform that empowers users to discover or create fun, tasty new recipes and cookbooks using a modern UI. 
+                Your next home cooked meal is just a swipe away with Scratch! 
+              </p>
+            </div>
+          </Bounce>
         </div>
 
         {/* project 2 */}
         <div className="flex justify-items-center ">
-          <div name="Scratch" className="p-4 rounded-xl border-4 border-[#282c2f] transition hover:scale-105 hover:shadow-lg hover:shadow-[#358f60] ease-in-out duration-300">
-          <p className="text-[#282c2f] italic font-bold sm:text-3xl text-2xl">PickUp</p>
-            <p className="text-[#515854] font-normal sm:text-xl text-lg pb-2" >Mobile & Web Development</p>
-            <p className="text-[#fff] font-normal sm:text-base text-sm rounded-lg p-4 bg-[#282c2f]">
-              A web and mobile app designed to give athletes and sports enthusiasts the oppertunity to find pick up games of any sport in their local area.
-              I'm also currently developing a leagues/ranking feature and tournament feature to gamify the app before release.
-            </p>
-          </div>
+          <Bounce right delay={1600} duration={1400}>
+            <div name="PickUp" className="p-4 rounded-xl border-4 border-[#282c2f] transition hover:scale-105 hover:shadow-lg hover:shadow-[#358f60] ease-in-out duration-300">
+              <p className="text-[#282c2f] italic font-bold sm:text-3xl text-2xl">PickUp</p>
+              <p className="text-[#515854] font-normal sm:text-xl text-lg pb-2" >Mobile & Web Development</p>
+              <p className="text-[#fff] font-normal sm:text-base text-sm rounded-lg p-4 bg-[#282c2f]">
+                A web and mobile app designed to give athletes and sports enthusiasts the oppertunity to find pick up games of any sport in their local area.
+                I'm also currently developing a leagues/ranking feature and tournament feature to gamify the app before release.
+              </p>
+            </div>
+          </Bounce  > 
         </div>
 
         {/* project 3 */}
         <div className="flex justify-items-center">
-          <div name="Scratch" className="p-4 rounded-xl border-4 border-[#282c2f] transition hover:scale-105 hover:shadow-lg hover:shadow-[#358f60] ease-in-out duration-300">
-            <p className="text-[#282c2f] italic font-bold sm:text-3xl text-2xl ">ToDo</p>
-            <p className="text-[#515854] font-normal sm:text-xl text-lg pb-2" >Mobile Development</p>
-            <p className="text-[#fff] font-normal sm:text-base text-sm rounded-lg p-4 bg-[#282c2f]">
-              Organization and task management are crucial to keep my productivity high. I kept trying different task management/reminder apps and none of them ever felt right for me.
-              This led me to just develope my own personal one, catered to my specific needs that I use daily to keep my productivity at an all time high.
-            </p>
-          </div>
+          <Bounce left delay={1600} duration={1400}>
+            <div name="ToDo" className="p-4 rounded-xl border-4 border-[#282c2f] transition hover:scale-105 hover:shadow-lg hover:shadow-[#358f60] ease-in-out duration-300">
+              <p className="text-[#282c2f] italic font-bold sm:text-3xl text-2xl ">ToDo</p>
+              <p className="text-[#515854] font-normal sm:text-xl text-lg pb-2" >Mobile Development</p>
+              <p className="text-[#fff] font-normal sm:text-base text-sm rounded-lg p-4 bg-[#282c2f]">
+                Organization and task management are crucial to keep my productivity high. I kept trying different task management/reminder apps and none of them ever felt right for me.
+                This led me to just develope my own personal one, catered to my specific needs that I use daily to keep my productivity at an all time high.
+              </p>
+            </div>
+          </Bounce>
         </div>
-
+      {/* end personal work web*/}
       </div>
 
     </div>

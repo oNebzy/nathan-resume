@@ -27,8 +27,8 @@ const Home = () => {
 
         <Fade top delay={1600} duration={1200}>
           <p className='text-[#515854] text-[14px] md:text-[20px] '>
-            {'I strive to build responsive, creative, & innovative software applications for both web and mobile, with a "User-First" mindset. I have a strong passion for software engineering and developement '}
-            {'that has been growing since I was first introduced to coding in a high school game design class. '}
+            {'I strive to build responsive, creative, and innovative software applications with a "User-First" mindset for both the web and mobile devices. I have a strong passion for software engineering and developement '}
+            {'that has been growing since I was introduced to coding in a high school game design class. '}
             {'Currently, I\'m working with my team at M&S Consulting to bring cutting edge software to life.'}
           </p>
         </Fade>
