@@ -15,6 +15,8 @@ import Contact from "./components/Contact";
  * accent(white): #E7EFE4
  */
 
+// https://qr.io/dashboard/
+
 function App() {
   return (
     <div className="bg-[#d3ece2]">
