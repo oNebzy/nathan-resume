@@ -1,9 +1,13 @@
 import React from 'react'
 import Fade from "react-reveal/Fade";
+import { FloatingNavBar } from "./NavigationBar";
 
 const About = () => {
   return (
     <div name="About" className='w-full h-screen bg-[#d3ece2]'>
+
+      <FloatingNavBar selectedTabId={2}/>
+
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col align-center items-start justify-center'>
 
         {/* Header container */}

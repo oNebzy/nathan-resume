@@ -10,9 +10,20 @@ module.exports = {
         wiggle: 'wiggle .5s ease-in-out infinite',
         jiggle: 'jiggle .5s infinite',
         jelloR: 'jelloR 1s',
-        jelloL: 'jelloL 1s'
+        jelloL: 'jelloL 1s',
+        text: 'text 8s ease-in-out infinite'
       },
       keyframes: {
+        text: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+        },
         wiggle: {
           '0%, 100%': { transform: 'rotate(-3deg) scale(1.15)' },
           '50%': { transform: 'rotate(3deg) scale(1.15)' },

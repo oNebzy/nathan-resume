@@ -1,10 +1,13 @@
 import React from 'react'
 import {FiSend} from 'react-icons/fi'
 import Fade from "react-reveal/Fade";
+import { FloatingNavBar } from "./NavigationBar";
 
 const Contact = () => {
   return (
     <div name="Contact" className="w-full h-screen bg-[#d3ece2]">
+
+      <FloatingNavBar selectedTabId={3}/>
 
       {/*container */}
       <div className="max-w-[1000px] mx-auto p-8 flex flex-col w-full h-full justify-center">
