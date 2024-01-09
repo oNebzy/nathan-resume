@@ -33,11 +33,11 @@
 
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence} from "framer-motion";
-import LandingPage from "./components/LandingPage";
-import Work from "./components/Work";
-import About from "./components/About";
-import Contact from "./components/Contact"
-import Skills from "./components/Skills";
+import LandingPage from "./screens/LandingPage";
+import Work from "./screens/Work";
+import About from "./legacy/About";
+import Contact from "./legacy/Contact"
+import Skills from "./legacy/Skills";
 
 
 function App() {

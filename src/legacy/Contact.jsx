@@ -1,7 +1,7 @@
 import React from 'react'
 import {FiSend} from 'react-icons/fi'
 import Fade from "react-reveal/Fade";
-import { FloatingNavBar } from "./NavigationBar";
+import { FloatingNavBar } from "../components/NavigationBar";
 
 const Contact = () => {
   return (

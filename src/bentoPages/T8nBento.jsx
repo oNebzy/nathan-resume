@@ -2,21 +2,22 @@ import React from 'react';
 import {HiArrowCircleRight , HiOutlineX} from 'react-icons/hi'
 
 //Skills Icon Imports
-import javascript from "../../assets/logos/javascript.png";
-import css from "../../assets/logos/css.png";
-import html from "../../assets/logos/html.png";
-import python from "../../assets/logos/python.png";
-import sql from "../../assets/logos/sql.png"
+import javascript from "../assets/logos/javascript.png";
+import css from "../assets/logos/css.png";
+import html from "../assets/logos/html.png";
+import python from "../assets/logos/python.png";
+import sql from "../assets/logos/sql.png"
+import BigQuery from "../assets/logos/BigQuery.png"
 
 
-function GrowmentumBento({onClose}) {
+function T8nBento({onClose}) {
   return (
     <div className="w-full h-full">
       {/* Top Row */}
       <div className='w-[100%] h-[14%] mb-6 grid grid-cols-10 gap-6'>
         <div className=' col-span-7 flex flex-col bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300'>
-          <div className='text-5xl ml-4 mt-4 bg-gradient-to-r from-emerald-400 to-white bg-clip-text text-transparent'>Growmentum</div>
-          <div className='text-white text-xl ml-5 mt-1 mb-4'>Web and Tablet Application</div>
+          <div className='text-5xl ml-4 mt-4 bg-gradient-to-r from-emerald-400 to-white bg-clip-text text-transparent pb-1'>The Eighth Notch</div>
+          <div className='text-white text-xl ml-5 mt-1 mb-4'>Web Application & API</div>
         </div>
         <div className='col-span-2 flex flex-col justify-center space-y-4'>
           <ViewSiteButton/>
@@ -51,7 +52,8 @@ function GrowmentumBento({onClose}) {
             <SkillBox imageImport={html} skill="HTML"/>
             <SkillBox imageImport={css} skill="CSS"/>
             <SkillBox imageImport={python} skill="Python"/>
-            <SkillBox imageImport={sql} skill="SQL"/>     
+            <SkillBox imageImport={sql} skill="SQL"/>
+            <SkillBox imageImport={BigQuery} skill="BigQuery"/>         
           </div>
         </div>
         {/* Contributions Box*/}
@@ -78,7 +80,7 @@ function GrowmentumBento({onClose}) {
   )
 }
 
-export default GrowmentumBento;
+export default T8nBento;
 
 
 
@@ -121,7 +123,7 @@ const ViewSiteButton = () => {
 const CloseProjectButton = ({onClick}) => {
   return (
     <button
-    onClick={onClick}
+      onClick={onClick}
       className={`
           relative z-0 flex items-center gap-2 overflow-hidden whitespace-nowrap rounded-lg border-2 
           border-white px-4 py-1.5 font-medium justify-center

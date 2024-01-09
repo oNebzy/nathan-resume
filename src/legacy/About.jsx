@@ -1,6 +1,6 @@
 import React from 'react'
 import Fade from "react-reveal/Fade";
-import { FloatingNavBar } from "./NavigationBar";
+import { FloatingNavBar } from "../components/NavigationBar";
 
 const About = () => {
   return (
