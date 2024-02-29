@@ -12,7 +12,7 @@ export const FloatingNavBar = (props) => {
       <Logo />
       <NavLink linkTo={"/"} selected={selected === 0} id={0} setSelected={setSelected}>Home</NavLink>
       <NavLink linkTo={"/MyWork"} selected={selected === 1} id={1} setSelected={setSelected}>Profesional</NavLink>
-      <NavLink linkTo={"/AboutMe"} selected={selected === 2} id={2} setSelected={setSelected}>Personal</NavLink>
+      {/* <NavLink linkTo={"/AboutMe"} selected={selected === 2} id={2} setSelected={setSelected}>Personal</NavLink> */}
       <NavLink linkTo={"/ContactMe"} selected={selected === 3} id={3} setSelected={setSelected}>Contact</NavLink>
     </nav>
   );
