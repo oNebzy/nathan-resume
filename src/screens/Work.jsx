@@ -6,6 +6,17 @@ import AboutBento from "../bentoPages/AboutBento";
 import GrowmentumBento from "../bentoPages/GrowmentumBento";
 import T8nBento from "../bentoPages/T8nBento";
 import MoodrBento from "../bentoPages/MoodrBento";
+import GigUpBento from "../bentoPages/GigUpBento";
+import FingyBento from "../bentoPages/Fingy3DBento";
+import SNCoriBento from "../bentoPages/SNCoriBento";
+
+// project card bg images 
+import GrowmentumBG from "../assets/projects/GrowmentumBG.png"
+import t8nBG from "../assets/projects/t8nBG.png"
+import MoodrBG from "../assets/projects/MoodrBG.png"
+import GigUpCard from "../assets/projects/GigUpCard.png"
+import FingyCard from "../assets/projects/FingyCard.png"
+import coriTest from "../assets/projects/coriTest.png"
 
 
 const Work = () => {
@@ -33,6 +44,12 @@ const Work = () => {
         return <T8nBento key="t8n" onClose={onProjectClose}/>
       case 3: 
         return <MoodrBento key="moodr" onClose={onProjectClose}/>
+      case 4:
+        return <GigUpBento key="gigup" onClose={onProjectClose}/>
+      case 5:
+        return <FingyBento key="fingy" onClose={onProjectClose}/>
+      case 6:
+        return <SNCoriBento key="sncori" onClose={onProjectClose}/>
       default:
         return null
       
@@ -46,18 +63,20 @@ const Work = () => {
 
       <FloatingNavBar selectedTabId={1}/>
 
-      <div className="h-[100vh] flex flex-row bg-gradient-to-b from-neutral-800 to-neutral-600 pt-24">
-        <div className="w-[600px] grid grid-cols-2 gap-4 ml-6">
+      <div className="h-[100vh] flex flex-row bg-gradient-to-b from-neutral-800 to-neutral-600 pt-[5.5rem]">
+        <div className="w-[600px] grid grid-cols-2 gap-x-16 ml-12 pt-[.7rem]">
           
-          <ProjectCard onClick={() => projectClicked(1)} title="Growmentum"/>
-          <ProjectCard onClick={() => projectClicked(2)} title="The Eighth Notch"/>
-          <ProjectCard onClick={() => projectClicked(3)} title="Moodr"/>
-          <ProjectCard onClick={() => projectClicked(4)} title="GigUp"/>
-          <ProjectCard onClick={() => projectClicked(5)} title="Fingy3D"/>
-          <ProjectCard onClick={() => projectClicked(6)} title="S+N CORI"/>
+          <ProjectCard onClick={() => projectClicked(1)} title="Growmentum" bgImage={GrowmentumBG}/>
+          <ProjectCard onClick={() => projectClicked(2)} title="The Eighth Notch" bgImage={t8nBG}/>
+          <ProjectCard onClick={() => projectClicked(3)} title="Moodr" bgImage={MoodrBG}/>
+          <ProjectCard onClick={() => projectClicked(6)} title="S+N CORI" bgImage={coriTest}/>
+          <ProjectCard onClick={() => projectClicked(5)} title="Fingy3D" bgImage={FingyCard}/>
+          <ProjectCard onClick={() => projectClicked(4)} title="GigUp" bgImage={GigUpCard}/>
+          
+          
 
         </div>
-        <div className="w-[8%] flex justify-center">
+        <div className="w-[7%] flex justify-center">
           <div className="w-[4px] h-[98%] bg-white"></div>
         </div>
         <div className="w-[50%]" id="ProjectContainer">

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import ViewSiteButton from '../components/buttons/ViewSiteButton';
 import CloseProjectButton from '../components/buttons/CloseProjectButton';
+import { SkillBox } from '../components/SkillBox';
 
 //Skills Icon Imports
 import javascript from "../assets/logos/javascript.png";
@@ -13,38 +14,22 @@ import sql from "../assets/logos/sql.png"
 
 function GrowmentumBento({onClose}) {
   
-  
-  const TopLeftFade = ({children, className, initial = "initial", animate = "animate", exit = "exit"}) => {
-    const topLeft_variants = {
-      initial: {opacity: 0, y: "-50%"},
-      animate: {opacity: 1, y: 0, transition:{duration: 2}},
-      exit: {opacity: 0, y: "-50%", transition:{duration: 1.3, delay: .5}}
-    }
-    return(
-      <motion.div
-        className={className}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        variants={topLeft_variants}
-      >
-        {children}
-      </motion.div>
-    )
-  }
-
-  
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full pt-10">
       {/* Top Row */}
-      <div className='w-[100%] h-[14%] mb-6 grid grid-cols-10 gap-6'>
+      <div className='w-[100%] h-[15%] mb-6 grid grid-cols-10 gap-6'>
         {/* Title Box */}
-        <TopLeftFade className='col-span-7'>
+        <motion.div
+          className='col-span-7'
+          initial={{opacity: 0, y: "-50%"}}
+          animate={{opacity: 1, y: 0, transition:{duration: 2}}}
+          exit={{opacity: 0, y: "-50%", transition:{duration: 1.3, delay: .5}}}
+        >
           <div className=' col-span-7 flex flex-col bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300'>
             <div className='text-5xl ml-4 mt-4 bg-gradient-to-r from-emerald-400 to-white bg-clip-text text-transparent'>Growmentum</div>
-            <div className='text-white text-xl ml-5 mt-1 mb-4'>Web and Tablet Application</div>
+            <div className='text-white text-xl ml-5 mt-1 mb-4'>Web & Tablet Application Development</div>
           </div>
-        </TopLeftFade>
+        </motion.div>
 
         {/* Button Box */}
         <motion.div
@@ -54,14 +39,14 @@ function GrowmentumBento({onClose}) {
           exit={{opacity: 0, y: "-50%", transition:{duration: 1}}}
         >
           <div className='h-[100%] col-span-2 flex flex-col justify-center space-y-4'>
-            <ViewSiteButton/>
+            <ViewSiteButton navLink={'https://www.growmentum.io/#/'}/>
             <CloseProjectButton onClick={() => {onClose()}}/>
           </div> 
         </motion.div>
       </div>
 
       {/* Second Row */}
-      <div className='w-[100%] h-[30%] mb-6 grid grid-cols-11 gap-6'>
+      <div className='w-[100%] h-[26%] mb-6 grid grid-cols-11 gap-6'>
         {/* Left Box */}
         <motion.div
           className='col-span-7'
@@ -69,8 +54,13 @@ function GrowmentumBento({onClose}) {
           animate={{opacity: 1, x: 0, transition:{duration: 2}}}
           exit={{opacity: 0, x: "35%", transition:{duration: 1.3, delay: .4}}}
         >
-          <div className='h-[100%] col-span-7 justify-center align-middle items-center flex flex-col pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 text-white'>
-            project description
+          <div className='h-[100%] col-span-7 align-middle items-center flex flex-col pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 text-white'>
+            <div className='w-fit m-5 text-xl font-semibold bg-gradient-to-r from-emerald-600 to-emerald-300 bg-clip-text text-transparent'>
+              Project Description
+            </div>
+            <div className='text-lg ml-6 mr-6'>
+              A cutting-edge agricultural technology platform that empowers commercial growers to reduce labor costs through centralized task management, labor management, and labor forecasting tools.
+            </div>
           </div>
         </motion.div>
         
@@ -100,7 +90,7 @@ function GrowmentumBento({onClose}) {
           animate={{opacity: 1, y: 0, transition:{duration: 2}}}
           exit={{opacity: 0, y: "50%", transition:{duration: 1, delay: .2}}}
         >
-          <div className='h-[100%] col-span-3 pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300'> 
+          <div className='h-fit col-span-3 pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300'> 
             <div className='m-3 text-2xl text-white text-center'>
               {'</>'} Tech Stack
             </div>
@@ -116,26 +106,30 @@ function GrowmentumBento({onClose}) {
         
         {/* Contributions Box*/}
         <motion.div
-          className='col-span-7'
+          className='col-span-8'
           initial={{opacity: 0, y: "50%"}}
           animate={{opacity: 1, y: 0, transition:{duration: 2, delay: .5}}}
           exit={{opacity: 0, y: "50%", transition:{duration: 1}}}
         >
-          <div className='col-span-7 h-[100%] flex flex-col items-center justify-center pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 mb-6'>  
-            Contributions 
-            {/* <div className='m-4 text-xl text-white text-center'>
-              I am dedicated to crafting 
-              <span className='text-[22px] text-emerald-400'> Responsive</span>, 
-              <span className='text-[22px] text-pink-400'> Imaginative</span>, and
-              <span className='text-[22px] text-emerald-400'> Innovative </span>software applications. 
+          <div className='col-span-8 h-[100%] pr-2 flex flex-col bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 '>  
+            <div className='w-fit m-3 text-2xl font-semibold bg-gradient-to-r from-pink-500 to-pink-300 bg-clip-text text-transparent'>
+              What impact did I have?
             </div>
-            <div className='m-4 text-xl text-white text-center'>
-              Developing with a <span className='text-[22px] text-pink-400'>"User-First" </span> approach to create seamless experiences across web and mobile platforms.
+            <div className='text-white text-lg mb-[10px] ml-3'>
+              Developed<span className='text-lg font-medium text-emerald-400'> project utilities</span> and <span className='text-lg font-medium text-emerald-400'> reuseable components</span> to maintain clean code 
             </div>
-            <div className='m-4 text-xl text-white text-center mt-8'>
-            I would describe myself as a well-organized and outgoing individual with a passion for transforming ideas into reality. Please check out what I can do, and let's create something great together.
-            </div> */}
-
+            <div className='text-white text-lg mb-[10px] ml-3'>
+              Designed, developed and maintained a <span className='text-lg font-medium text-emerald-400'>responsive web-based dashboard</span> offering real-time insights into vital business metrics
+            </div>
+            <div className='text-white text-lg mb-[10px] ml-3'>
+              Developed a seamless <span className='text-lg font-medium text-emerald-400'>multi-tenancy solution</span>, allowing for client customizations  
+            </div>
+            <div className='text-white text-lg mb-[10px] ml-3'>
+              Ensured a responsive and <span className='text-lg font-medium text-emerald-400'>visually polished user interface</span>, enhancing the overall user experience
+            </div>
+            <div className='text-white text-lg mb-[10px] ml-3'>
+              Designed and implemented server-side <span className='text-lg font-medium text-emerald-400'>RESTful queries</span> and business logic 
+            </div>
           </div>
         </motion.div>
         
@@ -145,16 +139,3 @@ function GrowmentumBento({onClose}) {
 }
 
 export default GrowmentumBento;
-
-
-
-function SkillBox(props) {
-  return (
-    <div className="rounded-lg w-full h-[86px] flex flex-col p-2 justify-evenly">
-      <div className="w-full h-full flex justify-center items-center">
-        <img src={props.imageImport} alt={""} className="max-h-10"></img>
-      </div>
-      <div>{props.skill}</div>
-    </div>
-  )
-}

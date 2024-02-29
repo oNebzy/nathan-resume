@@ -5,14 +5,14 @@ import CloseProjectButton from '../components/buttons/CloseProjectButton';
 import { SkillBox } from '../components/SkillBox';
 
 //Skills Icon Imports
-//Skills Icon Imports
-import react from "../assets/logos/react.png";
-import firebase from "../assets/logos/firebase.png";
+import javascript from "../assets/logos/javascript.png";
+import css from "../assets/logos/css.png";
+import html from "../assets/logos/html.png";
+import python from "../assets/logos/python.png";
 import sql from "../assets/logos/sql.png"
 import BigQuery from "../assets/logos/BigQuery.png"
-import eas from "../assets/logos/eas.png"
 
-export default function GigUpBento({onClose}) {
+function FingyBento({onClose}) {
   
   return (
     <div className="w-full h-full pt-10">
@@ -26,7 +26,7 @@ export default function GigUpBento({onClose}) {
           exit={{opacity: 0, y: "-50%", transition:{duration: 1.3, delay: .5}}}
         >
           <div className=' col-span-7 flex flex-col bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300'>
-            <div className='text-5xl ml-4 mt-3 pb-2 bg-gradient-to-r from-emerald-400 to-white bg-clip-text text-transparent'>GigUp</div>
+          <div className='text-5xl ml-4 mt-3 pb-2 bg-gradient-to-r from-emerald-400 to-white bg-clip-text text-transparent'>Fingy 3D</div>
             <div className='text-white text-xl ml-5 mt-1 mb-4'>Web & Mobile Application Development</div>
           </div>
         </motion.div>
@@ -39,7 +39,7 @@ export default function GigUpBento({onClose}) {
           exit={{opacity: 0, y: "-50%", transition:{duration: 1}}}
         >
           <div className='h-[100%] col-span-2 flex flex-col justify-center space-y-4'>
-            <ViewSiteButton navLink={'https://www.gigup.me/'}/>
+            <ViewSiteButton navLink={'https://fingy3d.com/'}/>
             <CloseProjectButton onClick={() => {onClose()}}/>
           </div> 
         </motion.div>
@@ -59,7 +59,7 @@ export default function GigUpBento({onClose}) {
               Project Description
             </div>
             <div className='text-lg ml-6 mr-6'>
-              A job finding platform designed to empower candidates with its user centric design, putting the control their hands. Gigup matches potential candidates with part time positions based on attributes such as availability, distance, and skills. 
+              A revolutionary application aiming to make finger prosthetics accessible to anyone. Utilizing a phone's camera, the user snaps a few guided pictures and the FingyEngine AI scans and sizes their custom prosthetic for an 'only you' fit.
             </div>
           </div>
         </motion.div>
@@ -73,9 +73,9 @@ export default function GigUpBento({onClose}) {
           exit={{opacity: 0, x: "35%", transition:{duration: 1}}}
         >
           <div className='h-[100%] col-span-4 justify-center align-middle items-center flex flex-col pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 text-white'>
-            <div className='text-lg mt-2'>peaked at </div>
-            <div className='text-[68px] animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-semibold'> {`<`} 250 </div>
-            <div className='text-lg '> active users </div>
+            <div className='text-lg mt-2'>asdg</div>
+            <div className='text-[68px] animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-semibold'>1</div>
+            <div className='text-lg '>asdg</div>
           </div>
         </motion.div>
         
@@ -90,16 +90,15 @@ export default function GigUpBento({onClose}) {
           animate={{opacity: 1, y: 0, transition:{duration: 2}}}
           exit={{opacity: 0, y: "50%", transition:{duration: 1, delay: .2}}}
         >
-          <div className='h-fit col-span-3 pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300'> 
+          <div className='h-[100%] col-span-3 pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300'> 
             <div className='m-3 text-2xl text-white text-center'>
               {'</>'} Tech Stack
             </div>
             <div className="w-full grid grid-cols-2 gap-3 text-center text-white font-medium sm:text-sm text-xs">
-              <SkillBox imageImport={react} skill="React"/>
-              <SkillBox imageImport={react} skill="React Native"/>
-              <SkillBox imageImport={firebase} skill="Firebase"/>
-              <SkillBox imageImport={eas} skill="EAS"/>
-              <SkillBox imageImport={BigQuery} skill="BigQuery"/>
+              <SkillBox imageImport={javascript} skill="Javascript"/>
+              <SkillBox imageImport={html} skill="HTML"/>
+              <SkillBox imageImport={css} skill="CSS"/>
+              <SkillBox imageImport={python} skill="Python"/>
               <SkillBox imageImport={sql} skill="SQL"/>     
             </div>
           </div>
@@ -112,24 +111,9 @@ export default function GigUpBento({onClose}) {
           animate={{opacity: 1, y: 0, transition:{duration: 2, delay: .5}}}
           exit={{opacity: 0, y: "50%", transition:{duration: 1}}}
         >
-          <div className='col-span-8 h-[100%] flex flex-col bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 '>  
+          <div className='col-span-8 h-[100%] flex flex-col bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 mb-6'>  
             <div className='w-fit m-3 text-2xl font-semibold bg-gradient-to-r from-pink-500 to-pink-300 bg-clip-text text-transparent'>
               What impact did I have?
-            </div>
-            <div className='text-white text-lg mb-[10px] ml-3'>
-              Assumed <span className='text-lg font-medium text-emerald-400'>full-stack development</span> responsibilities, from conceptualization to deployment
-            </div>
-            <div className='text-white text-lg mb-[10px] ml-3'>
-              Played an instrumental role in <span className='text-lg font-medium text-emerald-400'>feature ideation, design, and implementation</span>  
-            </div>
-            <div className='text-white text-lg mb-[10px] ml-3'>
-              Developed <span className='text-lg font-medium text-emerald-400'>reusable frontend components</span> prioritizing responsive design <br/> across various devices<span className='text-lg font-medium text-emerald-400'></span>
-            </div>
-            <div className='text-white text-lg mb-[10px] ml-3'>
-              Heavily influenced the overall <span className='text-lg font-medium text-emerald-400'>user interface</span> and <span className='text-lg font-medium text-emerald-400'>user experience</span>  of the mobile and web applications  
-            </div>
-            <div className='text-white text-lg mb-[10px] ml-3'>
-              Created <span className='text-lg font-medium text-emerald-400'>automated daily/weekly reporting</span> by integrating BigQuery and Data Studio with the Firebase backend<span className='text-lg font-medium text-emerald-400'></span>  
             </div>
             
           </div>
@@ -139,3 +123,5 @@ export default function GigUpBento({onClose}) {
     </div>
   )
 }
+
+export default FingyBento;

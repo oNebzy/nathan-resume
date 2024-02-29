@@ -4,11 +4,11 @@ import Fade from "react-reveal/Fade";
 import Typed from 'react-typed';
 import { Link } from 'react-router-dom';
 import {HiArrowNarrowRight} from 'react-icons/hi'
-import { motion, useIsPresent } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const LandingPage = () => {
 
-  const isPresent = useIsPresent();
+  //const isPresent = useIsPresent();
 
   return (
       <div className="absolute inset-0 z-0 bg-[#0C0C0D]">
@@ -46,7 +46,7 @@ const LandingPage = () => {
         initial={{ scaleX: 1 }}
         animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}
         exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
-        style={{ originX: isPresent ? 0 : 1 }}
+        style={{ originX: 1 }}
         className="fixed top-0 left-0 right-0 bottom-0 bg-[#0C0C0D] z-20"
       />
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
-export const ProjectCard = ({onClick, title}) => {
+export const ProjectCard = ({onClick, title, bgImage}) => {
 
   const handleCardClick= () => {
     if (onClick){
@@ -56,14 +56,18 @@ export const ProjectCard = ({onClick, title}) => {
         rotateX,
         transformStyle: "preserve-3d",
       }}
-      className="relative h-64 w-72 rounded-xl bg-gradient-to-br from-emerald-800 to-emerald-400"
+      className="relative h-[15rem] w-[18rem] rounded-xl bg-gradient-to-br from-emerald-900 to-emerald-500 "
     >
       <div
         style={{ 
           transform: "translateZ(75px)",
           transformStyle: "preserve-3d",
+          backgroundImage: bgImage ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgImage})` : 'none',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
-        className="absolute inset-4 grid place-content-center rounded-xl bg-[#282c2f] shadow-lg hover:cursor-pointer text-white text-2xl"
+        bg
+        className="absolute inset-4 grid place-content-center rounded-xl bg-[#282c2f] shadow-lg hover:cursor-pointer text-white text-3xl"
         onClick={handleCardClick}
       >
         {title}
