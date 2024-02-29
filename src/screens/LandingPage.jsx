@@ -16,7 +16,7 @@ const LandingPage = () => {
         
         <div className='w-fit px-8 flex flex-col h-fit relative left-44 top-52'>
           <TopFade top delay={1.5} duration={2}>
-            <h1 className='text-[#b5ffdc] text-[42px] leading-9 md:leading-[80px] font-medium md:text-5xl mb-4'>Nathan Burd</h1>
+            <h1 className='text-[#b5ffdc] text-[42px] leading-9 md:leading-[80px] font-medium md:text-5xl mb-4'>Nathan Burd T</h1>
           </TopFade>
 
           <TopFade top delay={2} duration={2}>
