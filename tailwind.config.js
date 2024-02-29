@@ -11,7 +11,8 @@ module.exports = {
         jiggle: 'jiggle .5s infinite',
         jelloR: 'jelloR 1s',
         jelloL: 'jelloL 1s',
-        text: 'text 8s ease-in-out infinite'
+        text: 'text 8s ease-in-out infinite',
+        textFast: 'text 3s linear infinite'
       },
       keyframes: {
         text: {
