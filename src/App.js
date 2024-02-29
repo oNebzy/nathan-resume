@@ -36,7 +36,7 @@ import { AnimatePresence} from "framer-motion";
 import LandingPage from "./screens/LandingPage";
 import Work from "./screens/Work";
 import About from "./legacy/About";
-import Contact from "./legacy/Contact"
+import Contact from "./screens/Contact"
 import Skills from "./legacy/Skills";
 
 
