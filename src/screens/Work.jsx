@@ -63,7 +63,7 @@ const Work = () => {
 
       <FloatingNavBar selectedTabId={1}/>
 
-      <div className="h-[100vh] flex flex-row bg-gradient-to-b from-neutral-800 to-neutral-600 pt-[5.5rem]">
+      <div className="h-[100vh] flex flex-row bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 pt-[5.5rem]">
         <div className="w-[600px] grid grid-cols-2 gap-x-16 ml-12 pt-[.7rem]">
           
           <ProjectCard onClick={() => projectClicked(1)} title="Growmentum" bgImage={GrowmentumBG}/>
