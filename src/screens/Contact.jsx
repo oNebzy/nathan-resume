@@ -26,7 +26,7 @@ const Contact = () => {
                   <div id='temp' className="w-full h-[4px] bg-emerald-300"></div>
                 </div>
                 <div className='col-span-3'>
-                    <p className="py-2 font-normal md:text-7xl text-4xl animate-textFast bg-gradient-to-r from-emerald-400 to-pink-300 bg-clip-text text-transparent">Let's make something.</p>
+                    <p className="py-2 font-normal md:text-7xl text-4xl animate-textFast bg-gradient-to-r from-emerald-400 to-pink-300 bg-clip-text text-transparent">Let's create something.</p>
                 </div>
                 
               </div>
