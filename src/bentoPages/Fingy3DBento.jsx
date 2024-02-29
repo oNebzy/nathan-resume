@@ -5,12 +5,10 @@ import CloseProjectButton from '../components/buttons/CloseProjectButton';
 import { SkillBox } from '../components/SkillBox';
 
 //Skills Icon Imports
-import javascript from "../assets/logos/javascript.png";
+import react from "../assets/logos/react.png";
+import Sass from "../assets/logos/Sass.png";
 import css from "../assets/logos/css.png";
-import html from "../assets/logos/html.png";
-import python from "../assets/logos/python.png";
-import sql from "../assets/logos/sql.png"
-import BigQuery from "../assets/logos/BigQuery.png"
+
 
 function FingyBento({onClose}) {
   
@@ -59,7 +57,7 @@ function FingyBento({onClose}) {
               Project Description
             </div>
             <div className='text-lg ml-6 mr-6'>
-              A revolutionary application aiming to make finger prosthetics accessible to anyone. Utilizing a phone's camera, the user snaps a few guided pictures and the FingyEngine AI scans and sizes their custom prosthetic for an 'only you' fit.
+              An award winning revolutionary application aiming to make finger prosthetics accessible to anyone. Utilizing a phone's camera, the user snaps a few guided pictures and the FingyEngine AI scans and sizes their custom prosthetic for an 'only you' fit.
             </div>
           </div>
         </motion.div>
@@ -73,9 +71,9 @@ function FingyBento({onClose}) {
           exit={{opacity: 0, x: "35%", transition:{duration: 1}}}
         >
           <div className='h-[100%] col-span-4 justify-center align-middle items-center flex flex-col pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 text-white'>
-            <div className='text-lg mt-2'>asdg</div>
-            <div className='text-[68px] animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-semibold'>1</div>
-            <div className='text-lg '>asdg</div>
+            <div className='text-lg mt-2'>Decreased load times by</div>
+            <div className='text-[68px] animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-semibold'>~30%</div>
+            <div className='text-lg '>enhancing front-end performance</div>
           </div>
         </motion.div>
         
@@ -90,16 +88,15 @@ function FingyBento({onClose}) {
           animate={{opacity: 1, y: 0, transition:{duration: 2}}}
           exit={{opacity: 0, y: "50%", transition:{duration: 1, delay: .2}}}
         >
-          <div className='h-[100%] col-span-3 pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300'> 
+          <div className='h-fit col-span-3 pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300'> 
             <div className='m-3 text-2xl text-white text-center'>
               {'</>'} Tech Stack
             </div>
             <div className="w-full grid grid-cols-2 gap-3 text-center text-white font-medium sm:text-sm text-xs">
-              <SkillBox imageImport={javascript} skill="Javascript"/>
-              <SkillBox imageImport={html} skill="HTML"/>
+              <SkillBox imageImport={react} skill="React"/>
+              <SkillBox imageImport={react} skill="React Native"/>
+              <SkillBox imageImport={Sass} skill="Sass"/>
               <SkillBox imageImport={css} skill="CSS"/>
-              <SkillBox imageImport={python} skill="Python"/>
-              <SkillBox imageImport={sql} skill="SQL"/>     
             </div>
           </div>
         </motion.div>
@@ -111,11 +108,23 @@ function FingyBento({onClose}) {
           animate={{opacity: 1, y: 0, transition:{duration: 2, delay: .5}}}
           exit={{opacity: 0, y: "50%", transition:{duration: 1}}}
         >
-          <div className='col-span-8 h-[100%] flex flex-col bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 mb-6'>  
+          <div className='col-span-8 h-fit flex flex-col bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 mb-6'>  
             <div className='w-fit m-3 text-2xl font-semibold bg-gradient-to-r from-pink-500 to-pink-300 bg-clip-text text-transparent'>
               What impact did I have?
             </div>
-            
+            <div className='text-white text-lg mb-[10px] ml-3'>
+              Designed and <span className='text-lg font-medium text-emerald-400'>implemented a custom camera page</span>, enhancing the user experience by enabling precise finger image capture for prosthetic fitting  
+            </div>
+            <div className='text-white text-lg mb-[10px] ml-3'>
+              <span className='text-lg font-medium text-emerald-400'>Crafted a streamlined submission flow</span>, ensuring efficient data collection and processing to facilitate the prosthetic fitting process
+            </div>
+            <div className='text-white text-lg mb-[10px] ml-3'>
+              Increased successful user submissions by <span className='text-lg font-medium text-emerald-400'>over 200%</span> by implementing various bug fixes and improvements
+            </div>
+            <div className='text-white text-lg mb-[10px] ml-3'>
+              Prioritized <span className='text-lg font-medium text-emerald-400'>user-centered design principles</span> to ensure the application's ease of use and accessibility 
+            </div>
+
           </div>
         </motion.div>
         
