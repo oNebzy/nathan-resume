@@ -15,11 +15,11 @@ const LandingPage = () => {
         <Spline className='absolute' scene="https://prod.spline.design/62i4pm30Ahcym-zB/scene.splinecode"/>
         
         <div className='w-fit px-8 flex flex-col h-fit relative left-44 top-52'>
-          <TopFade top delay={1.2} duration={2}>
+          <TopFade top delay={1} duration={2}>
             <h1 className='text-[#b5ffdc] text-[42px] leading-9 md:leading-[80px] font-medium md:text-5xl mb-4'>Nathan Burd</h1>
           </TopFade>
 
-          <TopFade top delay={1.5} duration={2}>
+          <TopFade top delay={1.3} duration={2}>
             <h2 className='text-[#ffffff] text-3xl font-medium md:text-[84px] mb-2'>
               <Typed
                 strings={['Front End Developer^1000','Web Exerience Creator^1000', 'Mobile Developer^1000']}
@@ -32,7 +32,7 @@ const LandingPage = () => {
             </h2>
           </TopFade>
 
-          <TopFade delay={2} duration={2}>
+          <TopFade delay={1.6} duration={2}>
             <div className='mt-8'>
               <Link to="/MyWork"><ExploreButton/></Link>
             </div>
