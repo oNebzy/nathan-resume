@@ -59,7 +59,7 @@ function T8nBento({onClose}) {
               Project Description
             </div>
             <div className='text-lg ml-6 mr-6'>
-              A first-of-its-kind technology platform enabling shippers and carriers to eliminate unnecessary delivery truck stops by sharing data further upstream, better coordinating and ultimately synchronizing deliveries
+              A first-of-its-kind technology platform enabling shippers and carriers to eliminate unnecessary delivery truck stops by sharing data further upstream, thus better coordinating and ultimately synchronizing deliveries.
             </div>
           </div>
         </motion.div>
@@ -130,7 +130,7 @@ function T8nBento({onClose}) {
             </div>
             
             <div className='text-white text-lg mb-[10px] ml-3'>
-              Cleaned and parsed client{`’`}s big data for use within the API
+            <span className='text-lg font-medium text-emerald-400'>Cleaned</span> and <span className='text-lg font-medium text-emerald-400'>parsed client{`’`}s big data</span> for use within the API
             </div>
           </div>
         </motion.div>
