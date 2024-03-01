@@ -59,7 +59,8 @@ export default function GigUpBento({onClose}) {
               Project Description
             </div>
             <div className='text-lg ml-6 mr-6'>
-              A job finding platform designed to empower candidates with its user centric design, putting the control in their hands. Gigup matches potential candidates with part time positions based on attributes such as availability, distance, and skills. 
+              A job finding platform designed to empower candidates with its user centric design, putting the control in their hands. 
+              GigUp matches potential candidates with part-time positions based on attributes such as availability, distance, and experience. 
             </div>
           </div>
         </motion.div>
@@ -73,8 +74,8 @@ export default function GigUpBento({onClose}) {
           exit={{opacity: 0, x: "35%", transition:{duration: 1}}}
         >
           <div className='h-[100%] col-span-4 justify-center align-middle items-center flex flex-col pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 text-white'>
-            <div className='text-lg mt-2'>peaked at </div>
-            <div className='text-[68px] animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-semibold'> {`<`} 250 </div>
+            <div className='text-lg mt-2'>Peaked at </div>
+            <div className='text-[68px] animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-semibold'> {`>`} 250 </div>
             <div className='text-lg '> active users </div>
           </div>
         </motion.div>

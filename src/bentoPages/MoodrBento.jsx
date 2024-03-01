@@ -74,7 +74,7 @@ export default function MoodrBento({onClose}) {
         >
           <div className='h-[100%] col-span-4 justify-center align-middle items-center flex flex-col pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 text-white'>
             <div className='text-lg mt-2'>Over</div>
-            <div className='text-[68px] animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-semibold'>1000</div>
+            <div className='text-[68px] animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-semibold'>1,000</div>
             <div className='text-lg '>Parents already impacted</div>
           </div>
         </motion.div>
@@ -122,10 +122,10 @@ export default function MoodrBento({onClose}) {
               Shadowed medical professionals to <span className='text-lg font-medium text-emerald-400'>create application requirements</span> from their process and friction points
             </div>
             <div className='text-white text-lg mb-[10px] ml-3'>
-            <span className='text-lg font-medium text-emerald-400'>Created custom algorithms</span> to score users responses, giving providers clear insight into their patient's sleep, mood, and diet
+            <span className='text-lg font-medium text-emerald-400'>Created custom algorithms</span> to score user's responses, giving providers clear insight into their patient's sleep, mood, and diet
             </div>
             <div className='text-white text-lg mb-[10px] ml-3'>
-              Lead the <span className='text-lg font-medium text-emerald-400'>integration of a texting platform</span> allowing patient-client text messaging from the application to native mobile device sms
+              Lead the <span className='text-lg font-medium text-emerald-400'>integration of a texting platform</span> allowing patient-client text messaging from the application to native mobile device SMS
             </div>
             <div className='text-white text-lg mb-[10px] ml-3'>
               Lead the <span className='text-lg font-medium text-emerald-400'>integration with wearables</span> such as Apple Watch and Fitbit.
