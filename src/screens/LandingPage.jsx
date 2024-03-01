@@ -10,7 +10,7 @@ const LandingPage = () => {
   //const isPresent = useIsPresent();
 
   return (
-      <div className="absolute inset-0 z-0 bg-[#0C0C0D] overflow-hidden">
+      <div className="absolute inset-0 z-0 bg-[#0C0C0D] h-[100%] md:overflow-hidden" style={{ overflowX: 'hidden', overflowY: 'auto' }}>
         
         {/* <Spline className='absolute' scene="https://prod.spline.design/62i4pm30Ahcym-zB/scene.splinecode"/> */}
         <Spline className='absolute' scene="https://prod.spline.design/P1GkSnv8mY3iHEbx/scene.splinecode" />
