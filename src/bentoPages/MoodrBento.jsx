@@ -8,7 +8,7 @@ import { SkillBox } from '../components/SkillBox';
 import react from "../assets/logos/react.png";
 import postgress from "../assets/logos/postgress.png"
 import heymarket from "../assets/logos/heymarket.png"
-import fitbit from "../assets/logos/fitbit.png"
+import fitbit from "../assets/logos/fitbit2.png"
 
 
 
