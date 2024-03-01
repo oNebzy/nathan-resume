@@ -57,11 +57,11 @@ const Work = () => {
   }
   
   return (
-    <div className="h-full w-full bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 md:overflow-hidden md:scrollbar-hide overflow-x-hidden" >
+    <div className="min-h-[100dvh] w-full bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 overflow-hidden" >
 
       <FloatingNavBar selectedTabId={1}/>
 
-      <div className="md:h-[100vh] h-fit flex md:flex-row flex-col bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 md:pt-[5.5rem] pt-6">
+      <div className="md:h-[100vh] h-fit flex md:flex-row flex-col bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 md:pt-[5.5rem] pt-10">
         
         {/* Project card section */}
         
@@ -92,7 +92,7 @@ const Work = () => {
             {renderProjectComponent()}
           </AnimatePresence>
         </div>
-        <div className="md:hidden flex w-full" id="ProjectContainer">
+        <div className="md:hidden flex w-full mb-14" id="ProjectContainer">
           <AnimatePresence mode="wait">
             {renderProjectComponent()}
           </AnimatePresence>
