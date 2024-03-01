@@ -57,7 +57,7 @@ const Work = () => {
   }
   
   return (
-    <div className="h-full w-full bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 md:overflow-hidden md:scrollbar-hide" style={{ overflowX: 'hidden', overflowY: 'auto' }}>
+    <div className="h-full w-full bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 md:overflow-hidden md:scrollbar-hide">
 
       <FloatingNavBar selectedTabId={1}/>
 

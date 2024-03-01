@@ -7,14 +7,33 @@ export const FloatingNavBar = (props) => {
 
   const [selected, setSelected] = useState(props.selectedTabId);
 
+  const [open, setOpen] = useState(false);
+
   return (
-    <nav className="fixed left-[50%] top-4 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-neutral-700 bg-neutral-900 p-2 text-sm text-neutral-500 pr-4 z-50">
-      <Logo />
-      <NavLink linkTo={"/"} selected={selected === 0} id={0} setSelected={setSelected}>Home</NavLink>
-      <NavLink linkTo={"/MyWork"} selected={selected === 1} id={1} setSelected={setSelected}>Professional</NavLink>
-      {/* <NavLink linkTo={"/AboutMe"} selected={selected === 2} id={2} setSelected={setSelected}>Personal</NavLink> */}
-      <NavLink linkTo={"/ContactMe"} selected={selected === 3} id={3} setSelected={setSelected}>Contact</NavLink>
-    </nav>
+    <div>
+      <nav className="md:flex hidden fixed left-[50%] top-4 w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-neutral-700 bg-neutral-900 p-2 text-sm text-neutral-500 pr-4 z-50">
+        <Logo />
+        <NavLink linkTo={"/"} selected={selected === 0} id={0} setSelected={setSelected}>Home</NavLink>
+        <NavLink linkTo={"/MyWork"} selected={selected === 1} id={1} setSelected={setSelected}>Professional</NavLink>
+        {/* <NavLink linkTo={"/AboutMe"} selected={selected === 2} id={2} setSelected={setSelected}>Personal</NavLink> */}
+        <NavLink linkTo={"/ContactMe"} selected={selected === 3} id={3} setSelected={setSelected}>Contact</NavLink>
+      </nav>
+
+      <div className="md:hidden">
+         <HamburgerButton active={open} setActive={setOpen} />
+      </div>
+      
+      
+      {/* <nav className={!open ? 'hidden' : "md:hidden absolute top-0 right-0 px-4 py-2 bg-[#282c2f] flex flex-col rounded-md"}>
+        <Logo />
+        <NavLink linkTo={"/"} selected={selected === 0} id={0} setSelected={setSelected}>Home</NavLink>
+        <NavLink linkTo={"/MyWork"} selected={selected === 1} id={1} setSelected={setSelected}>Professional</NavLink>
+        <NavLink linkTo={"/AboutMe"} selected={selected === 2} id={2} setSelected={setSelected}>Personal</NavLink>
+        <NavLink linkTo={"/ContactMe"} selected={selected === 3} id={3} setSelected={setSelected}>Contact</NavLink>
+      </nav> */}
+
+    </div>
+    
   );
 };
 
@@ -67,3 +86,66 @@ const NavLink = ({ children, linkTo, selected, id, setSelected }) => {
 //     </Link>
 //   );
 // };
+
+const HamburgerButton = ({ active, setActive }) => {
+  
+  const HAMBURGER_VARIANTS = {
+    top: {
+      open: {
+        rotate: ["0deg", "0deg", "45deg"],
+        top: ["35%", "50%", "50%"],
+      },
+      closed: {
+        rotate: ["45deg", "0deg", "0deg"],
+        top: ["50%", "50%", "35%"],
+      },
+    },
+    middle: {
+      open: {
+        rotate: ["0deg", "0deg", "-45deg"],
+      },
+      closed: {
+        rotate: ["-45deg", "0deg", "0deg"],
+      },
+    },
+    bottom: {
+      open: {
+        rotate: ["0deg", "0deg", "45deg"],
+        bottom: ["35%", "50%", "50%"],
+        left: "50%",
+      },
+      closed: {
+        rotate: ["45deg", "0deg", "0deg"],
+        bottom: ["50%", "50%", "35%"],
+        left: "calc(50% + 10px)",
+      },
+    },
+  };
+
+  return (
+    <>
+      <motion.button
+        initial={false}
+        animate={active ? "open" : "closed"}
+        onClick={() => setActive((pv) => !pv)}
+        className={`fixed right-4 top-4 z-50 h-[60px] w-[60px] transition-all bg-emerald-500 rounded-xl `}
+      >
+        <motion.span
+          variants={HAMBURGER_VARIANTS.top}
+          className="absolute block h-1 w-10 bg-white"
+          style={{ y: "-50%", left: "50%", x: "-50%" }}
+        />
+        <motion.span
+          variants={HAMBURGER_VARIANTS.middle}
+          className="absolute block h-1 w-10 bg-white"
+          style={{ left: "50%", x: "-50%", top: "50%", y: "-50%" }}
+        />
+        <motion.span
+          variants={HAMBURGER_VARIANTS.bottom}
+          className="absolute block h-1 w-5 bg-white"
+          style={{ x: "-50%", y: "50%" }}
+        />
+      </motion.button>
+    </>
+  );
+};
