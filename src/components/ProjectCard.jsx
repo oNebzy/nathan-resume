@@ -56,7 +56,7 @@ export const ProjectCard = ({onClick, title, bgImage}) => {
         rotateX,
         transformStyle: "preserve-3d",
       }}
-      className="relative h-[15rem] w-[18rem] rounded-xl bg-gradient-to-br from-emerald-900 to-emerald-500 "
+      className="relative md:h-[15rem] md:w-[18rem] h-36 w-48 rounded-xl bg-gradient-to-br from-emerald-900 to-emerald-500 "
     >
       <div
         style={{ 
@@ -67,7 +67,7 @@ export const ProjectCard = ({onClick, title, bgImage}) => {
           backgroundPosition: 'center',
         }}
         bg
-        className="absolute inset-4 grid place-content-center rounded-xl bg-[#282c2f] shadow-lg hover:cursor-pointer text-white text-3xl"
+        className="absolute md:inset-4 inset-2 grid place-content-center rounded-xl bg-[#282c2f] shadow-lg hover:cursor-pointer text-white md:text-3xl text-base"
         onClick={handleCardClick}
       >
         {title}

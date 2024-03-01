@@ -56,15 +56,20 @@ const Work = () => {
     }
   }
 
+  const [temp, setTemp] = useState(false);
+  const handleMenuClick = () => setTemp(!temp);
   
 
   return (
-    <div className="h=[100vh] w-full bg-[#d3ece2] overflow-hidden scrollbar-hide">
+    <div className="h-full w-full bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 md:overflow-hidden md:scrollbar-hide" style={{ overflowX: 'hidden', overflowY: 'auto' }}>
 
       <FloatingNavBar selectedTabId={1}/>
 
-      <div className="h-[100vh] flex flex-row bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 pt-[5.5rem]">
-        <div className="w-[600px] grid grid-cols-2 gap-x-16 ml-12 pt-[.7rem]">
+      <div className="md:h-[100vh] h-fit flex md:flex-row flex-col bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 md:pt-[5.5rem] pt-6">
+        
+        {/* Project card section */}
+        
+        <div className="md:w-[600px] w-full grid grid-cols-2 md:gap-x-16 md:gap-y-0 gap-y-3 md:ml-12 ml-2 pt-0 md:pt-[.7rem] ">
           
           <ProjectCard onClick={() => projectClicked(1)} title="Growmentum" bgImage={GrowmentumBG}/>
           <ProjectCard onClick={() => projectClicked(2)} title="The Eighth Notch" bgImage={t8nBG}/>
@@ -73,18 +78,31 @@ const Work = () => {
           <ProjectCard onClick={() => projectClicked(5)} title="Fingy3D" bgImage={FingyCard}/>
           <ProjectCard onClick={() => projectClicked(4)} title="GigUp" bgImage={GigUpCard}/>
           
-          
-
         </div>
-        <div className="w-[7%] flex justify-center">
+
+        {/* Divider section */}
+        <div className="md:flex hidden w-[7%] justify-center ">
           <div className="w-[4px] h-[98%] bg-white"></div>
         </div>
-        <div className="w-[50%]" id="ProjectContainer">
+
+        <div className="md:hidden flex w-full h-[4px] justify-center py-5">
+         <div  className=" w-[96vw] h-[4px] bg-white"></div>
+        </div>
+        
+
+        {/* Current bento section */}
+        <div className="md:flex hidden w-[50%]" id="ProjectContainer">
           <AnimatePresence mode="wait">
             {renderProjectComponent()}
           </AnimatePresence>
-          
         </div>
+        <div className="md:hidden flex w-full" id="ProjectContainer">
+          <AnimatePresence mode="wait">
+            {renderProjectComponent()}
+          </AnimatePresence>
+        </div>
+
+
       </div>
 
       <motion.div
