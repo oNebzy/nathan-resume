@@ -11,7 +11,7 @@ export const FloatingNavBar = (props) => {
     <nav className="fixed left-[50%] top-4 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-neutral-700 bg-neutral-900 p-2 text-sm text-neutral-500 pr-4 z-50">
       <Logo />
       <NavLink linkTo={"/"} selected={selected === 0} id={0} setSelected={setSelected}>Home</NavLink>
-      <NavLink linkTo={"/MyWork"} selected={selected === 1} id={1} setSelected={setSelected}>Profesional</NavLink>
+      <NavLink linkTo={"/MyWork"} selected={selected === 1} id={1} setSelected={setSelected}>Professional</NavLink>
       {/* <NavLink linkTo={"/AboutMe"} selected={selected === 2} id={2} setSelected={setSelected}>Personal</NavLink> */}
       <NavLink linkTo={"/ContactMe"} selected={selected === 3} id={3} setSelected={setSelected}>Contact</NavLink>
     </nav>
