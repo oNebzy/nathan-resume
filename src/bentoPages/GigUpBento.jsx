@@ -59,7 +59,7 @@ export default function GigUpBento({onClose}) {
               Project Description
             </div>
             <div className='text-lg ml-6 mr-6'>
-              A job finding platform designed to empower candidates with its user centric design, putting the control ins their hands. Gigup matches potential candidates with part time positions based on attributes such as availability, distance, and skills. 
+              A job finding platform designed to empower candidates with its user centric design, putting the control in their hands. Gigup matches potential candidates with part time positions based on attributes such as availability, distance, and skills. 
             </div>
           </div>
         </motion.div>
