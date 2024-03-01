@@ -111,13 +111,11 @@ const HamburgerButton = ({ active, setActive }) => {
     bottom: {
       open: {
         rotate: ["0deg", "0deg", "45deg"],
-        bottom: ["35%", "50%", "50%"],
-        left: "50%",
+        bottom: ["35%", "50%", "50%"],   
       },
       closed: {
         rotate: ["45deg", "0deg", "0deg"],
-        bottom: ["50%", "50%", "35%"],
-        left: "calc(50% + 10px)",
+        bottom: ["50%", "50%", "35%"],       
       },
     },
   };
@@ -128,11 +126,11 @@ const HamburgerButton = ({ active, setActive }) => {
         initial={false}
         animate={active ? "open" : "closed"}
         onClick={() => setActive((pv) => !pv)}
-        className={`fixed right-4 top-4 z-50 h-[60px] w-[60px] transition-all bg-emerald-500 rounded-xl `}
+        className={`fixed left-1/2 top-2 transform -translate-x-1/2 z-50 h-[50px] w-[70px] transition-all bg-emerald-500 rounded-lg `}
       >
         <motion.span
           variants={HAMBURGER_VARIANTS.top}
-          className="absolute block h-1 w-10 bg-white"
+          className="absolute block h-1 w-10 bg-white "
           style={{ y: "-50%", left: "50%", x: "-50%" }}
         />
         <motion.span
@@ -142,8 +140,8 @@ const HamburgerButton = ({ active, setActive }) => {
         />
         <motion.span
           variants={HAMBURGER_VARIANTS.bottom}
-          className="absolute block h-1 w-5 bg-white"
-          style={{ x: "-50%", y: "50%" }}
+          className="absolute block h-1 w-10 bg-white"
+          style={{x: "-50%", y: "50%", left: "50%" }}
         />
       </motion.button>
     </>
