@@ -226,7 +226,7 @@ function AboutBento() {
             <div className='px-3 pt-3 text-lg text-white text-center'>
               Developing with a <span className='text-lg text-pink-400'>"User-First" </span> approach to create seamless experiences across web and mobile platforms.
             </div>
-            <div className='px-3 pt-3 text-lg text-white text-center'>
+            <div className='p-3 text-lg text-white text-center'>
             I would describe myself as a well-organized and outgoing individual with a <span className='text-lg text-emerald-400'>passion for transforming ideas into reality</span>. Please check out what I can do, and let's create something great together.
             </div>
           </div>
