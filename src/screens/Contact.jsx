@@ -21,12 +21,12 @@ const Contact = () => {
               <p className="text-white font-normal md:text-8xl text-4xl my-2">Contact Me</p>
             </TopFade>
             <TopFade delay={.6} duration={1.2}>
-              <div id="row2" className="grid grid-cols-4 gap-10 ml-44">
+              <div id="row2" className="grid grid-cols-5 gap-8">
                 <div className='col-span-1 flex justify-center items-center'>
-                  <div id='temp' className="w-full h-[4px] bg-emerald-300"></div>
+                  <div id='temp' className="w-full h-[6px] bg-emerald-300"></div>
                 </div>
-                <div className='col-span-3'>
-                    <p className="py-2 font-normal md:text-7xl text-4xl animate-textFast bg-gradient-to-r from-emerald-400 to-pink-300 bg-clip-text text-transparent">Let's create something.</p>
+                <div className='col-span-4'>
+                    <p className="py-2 font-normal md:text-7xl text-4xl animate-textFast bg-gradient-to-r from-emerald-400 to-pink-300 bg-clip-text text-transparent">Let's create something together.</p>
                 </div>
                 
               </div>
