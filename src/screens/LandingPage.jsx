@@ -10,19 +10,20 @@ const LandingPage = () => {
   //const isPresent = useIsPresent();
 
   return (
-      <div className="absolute inset-0 z-0 bg-[#0C0C0D]">
+      <div className="absolute inset-0 z-0 bg-[#0C0C0D] overflow-hidden">
         
-        <Spline className='absolute' scene="https://prod.spline.design/62i4pm30Ahcym-zB/scene.splinecode"/>
+        {/* <Spline className='absolute' scene="https://prod.spline.design/62i4pm30Ahcym-zB/scene.splinecode"/> */}
+        <Spline className='absolute' scene="https://prod.spline.design/P1GkSnv8mY3iHEbx/scene.splinecode" />
         
-        <div className='w-fit px-8 flex flex-col h-fit relative left-44 top-52'>
+        <div className='w-fit px-8 flex flex-col h-fit relative md:left-44 md:top-52 top-40'>
           <TopFade top delay={1} duration={2}>
-            <h1 className='text-[#b5ffdc] text-[42px] leading-9 md:leading-[80px] font-medium md:text-5xl mb-4'>Nathan Burd</h1>
+            <h1 className='text-[#b5ffdc] md:leading-[80px] leading-4 font-medium md:text-5xl text-4xl md:mb-4 mb-2'>Nathan Burd</h1>
           </TopFade>
 
           <TopFade top delay={1.3} duration={2}>
-            <h2 className='text-[#ffffff] text-3xl font-medium md:text-[84px] mb-2'>
+            <h2 className='text-[#ffffff] text-[28px] font-medium md:text-[84px] md:leading-[2.25rem] md:mb-2'>
               <Typed
-                strings={['Front End Developer^1000','Web Exerience Creator^1000', 'Mobile Developer^1000']}
+                strings={['Front End Developer^1000','Web Experience Creator^1000', 'Mobile Developer^1000']}
                 typeSpeed={50}
                 backSpeed={60}
                 loop
@@ -33,7 +34,7 @@ const LandingPage = () => {
           </TopFade>
 
           <TopFade delay={1.6} duration={2}>
-            <div className='mt-8'>
+            <div className='md:mt-10 mt-3'>
               <Link to="/MyWork"><ExploreButton/></Link>
             </div>
             
@@ -73,7 +74,8 @@ const ExploreButton = () => {
           relative z-0 flex items-center gap-2 overflow-hidden whitespace-nowrap rounded-lg border-[3px] 
           border-neutral-800 px-4 py-1.5 font-medium
          text-neutral-100 transition-all duration-300
-         shadow-[0_0px_15px_-1px_rgba(0,0,0,0.1)] shadow-emerald-400 hover:shadow-pink-300
+         shadow-[0_0px_14px_-1px_rgba(0,0,0,0.1)] shadow-emerald-400 hover:shadow-pink-300
+         md:bg-transparent bg-neutral-700 bg-opacity-50
           
           before:absolute before:inset-0
           before:-z-10 before:translate-y-[200%]
