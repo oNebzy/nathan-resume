@@ -81,23 +81,14 @@ const Work = () => {
           <div className="w-[4px] h-[98%] bg-white"></div>
         </div>
 
-        <div className="md:hidden flex w-full h-[4px] justify-center py-5">
-         <div  className=" w-[96vw] h-[4px] bg-white"></div>
-        </div>
         
 
         {/* Current bento section */}
-        <div className="md:flex hidden w-[50%]" id="ProjectContainer">
+        <div className="flex w-[50%]" id="ProjectContainer">
           <AnimatePresence mode="wait">
             {renderProjectComponent()}
           </AnimatePresence>
         </div>
-        <div className="md:hidden flex w-full mb-14" id="ProjectContainer">
-          <AnimatePresence mode="wait">
-            {renderProjectComponent()}
-          </AnimatePresence>
-        </div>
-
 
       </div>
 
