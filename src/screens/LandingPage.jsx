@@ -34,8 +34,11 @@ const LandingPage = () => {
           </TopFade>
 
           <TopFade delay={1.6} duration={2}>
-            <div className='md:mt-10 mt-3'>
+            <div className='md:flex hidden md:mt-10 mt-3'>
               <Link to="/MyWork"><ExploreButton/></Link>
+            </div>
+            <div className='md:hidden flex md:mt-10 mt-3'>
+              <Link to="/About"><ExploreButton/></Link>
             </div>
             
           </TopFade>
