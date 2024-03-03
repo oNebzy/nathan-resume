@@ -45,9 +45,10 @@ const Work = () => {
   }
 
   const renderProjectComponent = () => {
+
     switch(selectedProject){
       case 0:
-        return <AboutBento key="about"/>;
+        return !isMobile ? <AboutBento key="about"/> : <ProjectSectionMobile key="projectSection"/>;
       case 1: 
         return <GrowmentumBento key="growmentum" onClose={onProjectClose}/>
       case 2:
@@ -62,28 +63,6 @@ const Work = () => {
         return <SNCoriBento key="sncori" onClose={onProjectClose}/>
       default:
         return null
-      
-    }
-  }
-
-  const renderMobileComponent = () => {
-    switch(selectedProject){
-      case 0:
-        return <ProjectSectionMobile key="projectSection"/>
-      case 1: 
-        return <GrowmentumBento key="growmentum" onClose={onProjectClose}/>
-      case 2:
-        return <T8nBento key="t8n" onClose={onProjectClose}/>
-      case 3: 
-        return <MoodrBento key="moodr" onClose={onProjectClose}/>
-      case 4:
-        return <GigUpBento key="gigup" onClose={onProjectClose}/>
-      case 5:
-        return <FingyBento key="fingy" onClose={onProjectClose}/>
-      case 6:
-        return <SNCoriBento key="sncori" onClose={onProjectClose}/>
-      default:
-        return null;
       
     }
   }
@@ -168,7 +147,7 @@ const Work = () => {
         <div className="h-fit flex flex-col bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 pt-24">
           <div className="flex w-full" id="ProjectContainer">
             <AnimatePresence mode="wait">
-              {renderMobileComponent()}
+              {renderProjectComponent()}
             </AnimatePresence>
           </div>
         </div>
