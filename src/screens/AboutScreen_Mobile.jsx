@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useIsPresent } from 'framer-motion';
 import { SkillBox } from '../components/SkillBox';
 import {TbFileExport} from 'react-icons/tb'
 import resume from "../assets/NathanBurdResume.pdf"
@@ -19,6 +19,8 @@ import csharp from "../assets/logos/csharp.png"
 
 
 function AboutScreen() {
+
+  const isPresent = useIsPresent();
 
   return (
     <div className="min-h-[100dvh] w-full bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 overflow-hidden" >
@@ -242,6 +244,15 @@ function AboutScreen() {
         
         
       </div>
+
+      <motion.div
+        initial={{ scaleX: 1 }}
+        animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}
+        exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}
+        style={{ originX: isPresent ? 0 : 1 }}
+        className="fixed top-0 left-0 right-0 bottom-0 bg-[#0C0C0D] z-20"
+      />
+
     </div>
     
   )

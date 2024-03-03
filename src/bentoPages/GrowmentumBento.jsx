@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ViewSiteButton from '../components/buttons/ViewSiteButton';
+import ViewSiteButton from '../components/buttons/ViewSiteButton'; 
 import CloseProjectButton from '../components/buttons/CloseProjectButton';
 import { SkillBox } from '../components/SkillBox';
 
