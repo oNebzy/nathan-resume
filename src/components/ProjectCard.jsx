@@ -66,7 +66,6 @@ export const ProjectCard = ({onClick, title, bgImage}) => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
-        bg
         className="absolute md:inset-4 inset-2 grid place-content-center rounded-xl bg-[#282c2f] shadow-lg hover:cursor-pointer text-white md:text-3xl text-lg"
         onClick={handleCardClick}
       >

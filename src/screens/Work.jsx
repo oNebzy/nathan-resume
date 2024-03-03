@@ -38,12 +38,11 @@ const Work = () => {
   const projectClicked = (id) => {
     console.log(`clicked project:${id}`)
     setSelectedProject(id)
-    setIsProjectSelected(true)
+    
   }
 
   const onProjectClose = () => {
     setSelectedProject(0)
-    setIsProjectSelected(false)
   }
 
   const renderProjectComponent = () => {
@@ -68,27 +67,28 @@ const Work = () => {
     }
   }
 
-  const CurrentBento = () => {
-    return (
-      <div className="flex w-[50%]" id="ProjectContainer">
-        <AnimatePresence mode="wait">
-          {renderProjectComponent()}
-        </AnimatePresence>
-      </div>
-    );
-  };
-
-  const MobileView = () => {
-    return (
-      <div className="w-full h-fit">
-        {isProjectSelected ? (
-          <CurrentBento/>
-        ) : (
-          <ProjectSectionMobile/>
-        )}
-      </div>
-    );
+  const renderMobileComponent = () => {
+    switch(selectedProject){
+      case 0:
+        return <ProjectSectionMobile key="projectSection"/>
+      case 1: 
+        return <GrowmentumBento key="growmentum" onClose={onProjectClose}/>
+      case 2:
+        return <T8nBento key="t8n" onClose={onProjectClose}/>
+      case 3: 
+        return <MoodrBento key="moodr" onClose={onProjectClose}/>
+      case 4:
+        return <GigUpBento key="gigup" onClose={onProjectClose}/>
+      case 5:
+        return <FingyBento key="fingy" onClose={onProjectClose}/>
+      case 6:
+        return <SNCoriBento key="sncori" onClose={onProjectClose}/>
+      default:
+        return null;
+      
+    }
   }
+
 
   const ProjectSection = () => {
     return (
@@ -105,33 +105,31 @@ const Work = () => {
 
   const ProjectSectionMobile = () => {
     return (
-      <AnimatePresence mode="wait">
-        <div className="w-full max-h-screen grid grid-cols-2 gap-y-8 ml-2">
-          {/* row 1 */}
-          <LeftFade delay={1} duration={1.8}>
-            <ProjectCard onClick={() => projectClicked(1)} title="Growmentum" bgImage={GrowmentumBG}/>
-          </LeftFade>
-          <RightFade delay={1} duration={1.8}>
-            <ProjectCard onClick={() => projectClicked(2)} title="The Eighth Notch" bgImage={t8nBG}/>
-          </RightFade>
+      <div key="plzworkl" className="w-full max-h-screen grid grid-cols-2 gap-y-8 ml-2">
+        {/* row 1 */}
+        <LeftFade delay={.5} duration={1.5}>
+          <ProjectCard key="grmCard" onClick={() => projectClicked(1)} title="Growmentum" bgImage={GrowmentumBG}/>
+        </LeftFade>
+        <RightFade delay={.5} duration={1.5}>
+          <ProjectCard key="t8nCard" onClick={() => projectClicked(2)} title="The Eighth Notch" bgImage={t8nBG}/>
+        </RightFade>
 
-          {/* row 2 */}
-          <LeftFade delay={1.3} duration={1.8}>
-            <ProjectCard onClick={() => projectClicked(3)} title="Moodr" bgImage={MoodrBG}/>
-          </LeftFade>
-          <RightFade delay={1.3} duration={1.8}>
-            <ProjectCard onClick={() => projectClicked(6)} title="S+N CORI" bgImage={coriTest}/>
-          </RightFade>
+        {/* row 2 */}
+        <LeftFade delay={1} duration={1.5}>
+          <ProjectCard key="mdrCard" onClick={() => projectClicked(3)} title="Moodr" bgImage={MoodrBG}/>
+        </LeftFade>
+        <RightFade delay={1} duration={1.5}>
+          <ProjectCard key="snCard" onClick={() => projectClicked(6)} title="S+N CORI" bgImage={coriTest}/>
+        </RightFade>
 
-          {/* row 3 */}
-          <LeftFade delay={1.6} duration={1.8}>
-            <ProjectCard onClick={() => projectClicked(5)} title="Fingy3D" bgImage={FingyCard}/>
-          </LeftFade>
-          <RightFade delay={1.6} duration={1.8}>
-            <ProjectCard onClick={() => projectClicked(4)} title="GigUp" bgImage={GigUpCard}/>
-          </RightFade>
-        </div>
-      </AnimatePresence>
+        {/* row 3 */}
+        <LeftFade delay={1.5} duration={1.5}>
+          <ProjectCard key="fngCard" onClick={() => projectClicked(5)} title="Fingy3D" bgImage={FingyCard}/>
+        </LeftFade>
+        <RightFade delay={1.5} duration={1.5}>
+          <ProjectCard key="gupCard" onClick={() => projectClicked(4)} title="GigUp" bgImage={GigUpCard}/>
+        </RightFade>
+      </div>
     )
   }
 
@@ -161,11 +159,19 @@ const Work = () => {
           </div>
 
           {/* Current bento section */}
-          <CurrentBento/>
+          <div className="flex w-[50%]" id="ProjectContainer">
+            <AnimatePresence mode="wait">
+              {renderProjectComponent()}
+            </AnimatePresence>
+          </div>
         </div>
       ) : (
         <div className="h-fit flex flex-col bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 pt-24">
-          <MobileView/>
+          <div className="flex w-full" id="ProjectContainer">
+            <AnimatePresence mode="wait">
+              {renderMobileComponent()}
+            </AnimatePresence>
+          </div>
         </div>
       )}
 
@@ -189,7 +195,7 @@ const RightFade = (props) => {
       className=''
       style={{ willChange: 'transform' }}
       initial={{opacity: 0, x: "30%"}}
-      exit={{opacity: 0, x: "30%", transition:{duration: props.duration, delay: props.delay}}}
+      exit={{opacity: 0, x: "30%", transition:{duration: props.duration, delay: 0}}}
       animate={{opacity: 1, x: 0, transition:{duration: props.duration, delay: props.delay}}}
     >
       {props.children}
@@ -202,7 +208,7 @@ const LeftFade = (props) => {
       className=''
       style={{ willChange: 'transform' }}
       initial={{opacity: 0, x: "-30%"}}
-      exit={{opacity: 0, x: "30%", transition:{duration: props.duration, delay: props.delay}}}
+      exit={{opacity: 0, x: "-30%", transition:{duration: props.duration, delay: 0}}}
       animate={{opacity: 1, x: 0, transition:{duration: props.duration, delay: props.delay}}}
     >
       {props.children}
