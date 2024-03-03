@@ -56,7 +56,7 @@ export const ProjectCard = ({onClick, title, bgImage}) => {
         rotateX,
         transformStyle: "preserve-3d",
       }}
-      className="relative md:h-[15rem] md:w-[18rem] h-36 w-48 rounded-xl bg-gradient-to-br from-emerald-900 to-emerald-500 "
+      className="relative md:h-[15rem] md:w-[18rem] h-44 w-48 rounded-xl bg-gradient-to-br from-emerald-900 to-emerald-500 "
     >
       <div
         style={{ 
