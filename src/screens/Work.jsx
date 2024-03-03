@@ -146,7 +146,7 @@ const Work = () => {
   }, []);
   
   return (
-    <div className="h-full w-full bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 overflow-hidden" >
+    <div className="h-screen w-full bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 overflow-hidden">
 
       <FloatingNavBar selectedTabId={1}/>
 

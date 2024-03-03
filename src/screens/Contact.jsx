@@ -8,33 +8,43 @@ const Contact = () => {
   const isPresent = useIsPresent();
 
   return (
-    <div name="Contact" className="w-full h-screen bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800">
+    <div name="Contact" className="w-full md:h-screen h-fit bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800">
 
       <FloatingNavBar selectedTabId={3}/>
 
       {/*Page container */}
-      <div className="max-w-[75%] mx-auto p-8 flex flex-col w-full h-full justify-center ">
+      <div className="md:max-w-[75%] md:mx-auto p-5 flex flex-col w-full h-full md:justify-center">
  
           {/* Header Section */}
-          <div className="mt-12">
+          <div className="md:mt-12 mt-14">
             <TopFade delay={.3} duration={1.2}>
-              <p className="text-white font-normal md:text-8xl text-4xl my-2">Contact Me</p>
+              <div className='flex flex-row'>
+                <p className="text-white font-normal md:text-8xl text-4xl my-2">Contact Me</p>
+                <div className='md:hidden flex justify-center items-center'>
+                  <div id='temp' className="ml-4 w-[10rem] h-[4px] animate-textFast bg-gradient-to-r from-emerald-400 to-pink-300"></div>
+                </div>
+              </div>
+              
             </TopFade>
             <TopFade delay={.6} duration={1.2}>
               <div id="row2" className="grid grid-cols-5 gap-8">
-                <div className='col-span-1 flex justify-center items-center'>
+                <div className='col-span-1 md:flex hidden justify-center items-center'>
                   <div id='temp' className="w-full h-[6px] bg-emerald-300"></div>
                 </div>
-                <div className='col-span-4'>
+                <div className='md:col-span-4 col-span-5 md:text-left text-center'>
                     <p className="py-2 font-normal md:text-7xl text-4xl animate-textFast bg-gradient-to-r from-emerald-400 to-pink-300 bg-clip-text text-transparent">Let's create something together.</p>
                 </div>
-                
               </div>
             </TopFade>
           </div>
 
-          {/* Body / Form Section */}
-          <div className='grid grid-cols-5'>
+          {/* mobile divider for cleaner UI flow */}
+          <div className='md:hidden flex justify-center items-center'>
+            <div id='temp' className="mt-4 w-full h-[4px] animate-textFast bg-gradient-to-r from-emerald-400 to-pink-300"></div>
+          </div>
+
+          {/* WEB Body / Form Section */}
+          <div className='md:grid hidden grid-cols-5 md:mt-0 mt-4'>
             {/* left group*/}
             <div className='col-span-3'>
               <form method="POST" action="https://getform.io/f/e4a5c553-57c4-44a6-8c3f-9d9bddc58109" className='flex flex-col w-full'>
@@ -88,14 +98,79 @@ const Contact = () => {
                     Professional references are available upon request to protect their confidentiality and personal privacy
                   </p>
                 </RightFade>
-
               </div>
-              
-              
+            </div>
+          </div>
 
+          {/* MOBILE Body / Form Section */}
+          <div className='md:hidden flex flex-col mt-4'>
+            {/* top group */}
+            <div className='row-span-1 pl-3'>
+              <div className='flex flex-col justify-center align-middle'>
+                <RightFade delay={1} duration={1.8}>
+                  <p className='text-neutral-100 text-xl pt-2 font-medium'>Thanks for visiting my portfolio!</p>
+                </RightFade>
+                <RightFade delay={1.3} duration={1.8}>
+                  <p className='text-neutral-300 text-lg pt-2'>
+                    Please complete the form below or feel free to contact me directly using the following information. 
+                  </p>
+                </RightFade>
+                <RightFade delay={1.6} duration={1.8}>
+                  <p className='pt-6 text-base flex flex-row align-middle items-center space-x-4'>
+                    <FiMail className='text-white text-2xl'/><span className='font-semibold underline text-white hover:text-emerald-400 '><a href="mailto: nathanburd.dev@gmail.com">nathanburd.dev@gmail.com</a></span>
+                  </p>
+                </RightFade>
+                <RightFade delay={1.9} duration={1.8}>
+                  <p className='pt-6 text-base flex flex-row align-middle items-center space-x-4'>
+                    <FiPhone className='text-white text-2xl'/><span className='font-semibold text-white hover:text-pink-300 '>{`(`}304{`)`} 210-5555</span>
+                  </p>
+                </RightFade>
+                <RightFade delay={2.2} duration={1.8}>
+                  <p className='text-neutral-300 text-lg pt-6'>
+                    **Professional references are available upon request to protect their confidentiality and personal privacy
+                  </p>
+                </RightFade>
+              </div>
             </div>
 
+            {/* mobile divider for cleaner UI flow */}
+            <div className='md:hidden flex justify-center items-center'>
+              <div id='temp' className="mt-4 w-full h-[4px] animate-textFast bg-gradient-to-r from-emerald-400 to-pink-300"></div>
+             </div>
+             
+            {/* left group*/}
+            <div className='mt-3'>
+              <form method="POST" action="https://getform.io/f/e4a5c553-57c4-44a6-8c3f-9d9bddc58109" className='flex flex-col w-full'>
+                <TopFade delay={1.2} duration={1.2}>
+                  <p className="font-Kaushanscript text-neutral-100">{"<Contact form>"}</p>
+                </TopFade>
+                <TopFade delay={1.4} duration={1.2}>
+                  <input className='w-full bg-neutral-800 p-2 mt-3 text-neutral-100 rounded-lg' type="text" placeholder='Name, Title, or Business' name='name'/>
+                </TopFade>
+                <TopFade delay={1.6} duration={1.2}>
+                  <div className='flex flex-row space-x-4'>
+                    <input className='w-full bg-neutral-800 p-2 mt-3 text-neutral-100 rounded-lg' type="text" placeholder='Email' name='email'/>
+                  </div>
+                </TopFade>
+                <TopFade delay={1.8} duration={1.2}>
+                  <div className='flex flex-row space-x-4'>
+                    <input className='w-full bg-neutral-800 p-2 mt-3 text-neutral-100 rounded-lg' type="text" placeholder='Phone Number' name='phone'/>
+                  </div>
+                </TopFade>
+                <TopFade delay={2} duration={1.2}>
+                  <textarea className='w-full bg-neutral-800 p-2 mt-3 text-neutral-100 rounded-lg resize-none' name="msg" rows="10" placeholder='Message'></textarea>  
+                </TopFade>
+                <TopFade delay={2.2} duration={1.2}>
+                  <SendMsgButton/>
+                </TopFade>
+                <TopFade delay={1.2} duration={1.2}>
+                  <p className="font-Kaushanscript text-neutral-100 mt-3">{"<Contact form>"}</p>
+                </TopFade>
+              </form>
+            </div>
 
+            {/* right group*/}
+            
           </div>
  
           
@@ -150,7 +225,7 @@ const RightFade = (props) => {
 
 const SendMsgButton = () => {
   return (
-    <div className="flex items-center justify-center mt-6">
+    <div className="flex items-center justify-center mt-3">
       <button
         className={`
           group 
