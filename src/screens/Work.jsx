@@ -33,7 +33,6 @@ const Work = () => {
   const isPresent = useIsPresent();
 
   const [selectedProject, setSelectedProject] = useState(0);
-  const [isProjectSelected, setIsProjectSelected] = useState(false);
 
   const projectClicked = (id) => {
     console.log(`clicked project:${id}`)
