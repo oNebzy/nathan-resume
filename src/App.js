@@ -35,7 +35,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence} from "framer-motion";
 import LandingPage from "./screens/LandingPage";
 import Work from "./screens/Work";
-//import About from "./legacy/About";
+import AboutScreen from "./screens/AboutScreen_Mobile";
 import Contact from "./screens/Contact"
 //import Skills from "./legacy/Skills";
 
@@ -50,7 +50,7 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<LandingPage/>}></Route>
             <Route path="/MyWork" element={<Work/>}></Route>
-            {/* <Route path="/AboutMe" element={<About/>}></Route> */}
+            <Route path="/About" element={<AboutScreen/>}></Route>
             <Route path="/ContactMe" element={<Contact/>}></Route>
             {/* <Route path="/Skills" element={<Skills/>}></Route> */}
           </Routes>
