@@ -8,7 +8,7 @@ const ViewSiteButton = ({navLink}) => {
       <button    
         className={`
           relative w-full z-0 flex items-center gap-2 overflow-hidden whitespace-nowrap rounded-lg border-2 
-        border-white px-4 py-1.5 font-medium justify-center
+        border-white md:px-4 px-1 md:py-1.5 py-1 md:font-medium font-normal md:text-base text-sm justify-center
         text-neutral-100 transition-all duration-300
           shadow-[0_0px_12px_-1px_rgba(0,0,0,0.1)]  hover:shadow-emerald-400
           
@@ -24,7 +24,7 @@ const ViewSiteButton = ({navLink}) => {
           active:scale-100
         `}
       >
-        View Site<HiArrowCircleRight className="text-xl"/>
+        View Site<HiArrowCircleRight className="md:text-xl text-lg"/>
       </button>
     </a>
     
