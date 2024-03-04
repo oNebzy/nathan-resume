@@ -47,7 +47,7 @@ function GrowmentumBento({onClose}) {
           >
             <div className=' col-span-7 flex flex-col bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300'>
               <div className='text-5xl ml-4 mt-4 bg-gradient-to-r from-emerald-400 to-white bg-clip-text text-transparent'>Growmentum</div>
-              <div className='text-white text-xl ml-5 mt-1 mb-4'>Web & Tablet Application Development</div>
+              <div className='text-white text-xl ml-5 mt-1 mb-4'>Full Stack Development</div>
             </div>
           </motion.div>
 
@@ -94,7 +94,7 @@ function GrowmentumBento({onClose}) {
           >
             <div className='h-[100%] col-span-4 justify-center align-middle items-center flex flex-col pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 text-white'>
               <div className='text-lg mt-2'>Responsible for</div>
-              <div className='text-[68px] animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-semibold'>{'<'} $100m</div>
+              <div className='text-[68px] animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-semibold'>{'>'} $100m</div>
               <div className='text-lg '>of labor management & analysis</div>
             </div>
           </motion.div>
@@ -174,7 +174,7 @@ function GrowmentumBento({onClose}) {
           >
             <div className=' col-span-7 flex flex-col bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300'>
               <div className='text-2xl ml-2 mt-1 bg-gradient-to-r from-emerald-400 to-white bg-clip-text text-transparent'>Growmentum</div>
-              <div className='text-white text-sm ml-2 mt-1 mb-2'>Web & Tablet Application Development</div>
+              <div className='text-white text-base ml-2 mt-1 mb-2'>Full Stack Development</div>
             </div>
           </motion.div>
 
@@ -203,11 +203,11 @@ function GrowmentumBento({onClose}) {
             animate={{opacity: 1, x: 0, transition:{duration: 2, delay: .5}}}
             exit={{opacity: 0, x: "50%", transition:{duration: 1, delay: .2}}}
           >
-            <div className='h-fit col-span-10 align-middle items-center flex flex-col pb-4 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 text-white'>
-              <div className='w-fit mt-2 text-lg font-semibold bg-gradient-to-r from-emerald-600 to-emerald-300 bg-clip-text text-transparent'>
+            <div className='h-fit col-span-10 align-middle items-center flex flex-col pb-2 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 text-white'>
+              <div className='w-fit mt-2 text-xl font-semibold bg-gradient-to-r from-emerald-600 to-emerald-300 bg-clip-text text-transparent'>
                 Project Description
               </div>
-              <div className='text-sm ml-3 mt-1'>
+              <div className='text-base mt-1 mx-2 text-center'>
                 A cutting-edge agricultural technology platform that empowers commercial growers to reduce labor costs through centralized task management, labor management, and labor forecasting tools.
               </div>
             </div>
@@ -228,8 +228,8 @@ function GrowmentumBento({onClose}) {
               <div className='ml-1 mt-1 text-lg text-white text-center'>
                 {'</>'} Tech Stack
               </div>
-              <div className="w-full grid grid-cols-5 gap-3 text-center text-white font-medium sm:text-sm text-xs">
-                <SkillBox imageImport={javascript} skill="Javascript"/>
+              <div className="w-full grid grid-cols-5 gap-3 text-center text-white font-medium text-xs">
+                <SkillBox imageImport={javascript} skill="JS"/>
                 <SkillBox imageImport={html} skill="HTML"/>
                 <SkillBox imageImport={css} skill="CSS"/>
                 <SkillBox imageImport={python} skill="Python"/>
@@ -248,7 +248,7 @@ function GrowmentumBento({onClose}) {
           >
             <div className='h-fit justify-center align-middle items-center flex flex-col pb-2 bg-neutral-800 shadow-md shadow-[#7f8285] rounded-xl border-2 border-[#ffffff] transition hover:shadow-lg hover:shadow-pink-300 ease-in-out duration-300 text-white'>
               <div className='text-base mt-2'>Responsible for</div>
-              <div className='text-6xl my-2 animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-medium'>{'<'} $100m</div>
+              <div className='text-6xl my-2 animate-text bg-gradient-to-r from-emerald-500 to-pink-400 bg-clip-text text-transparent font-medium'>{'>'} $100m</div>
               <div className='text-base '>of labor management & analysis</div>
             </div>
           </motion.div>
@@ -284,10 +284,6 @@ function GrowmentumBento({onClose}) {
           </motion.div>
 
         </div>
-
-        
-
-
       </div>
     );
   }
