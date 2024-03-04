@@ -122,7 +122,7 @@ const Work = () => {
   }, []);
   
   return (
-    <div className="h-screen w-full bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 overflow-hidden">
+    <div className="h-screen w-full bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 md:overflow-hidden">
 
       <FloatingNavBar selectedTabId={1}/>
 
@@ -144,7 +144,7 @@ const Work = () => {
           </div>
         </div>
       ) : (
-        <div className="h-fit flex flex-col bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 pt-24">
+        <div className="h-fit flex flex-col bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800 pt-[5.5rem]">
           <div className="flex w-full" id="ProjectContainer">
             <AnimatePresence mode="wait">
               {renderProjectComponent()}
