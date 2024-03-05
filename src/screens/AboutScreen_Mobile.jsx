@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, useIsPresent } from 'framer-motion';
 import { SkillBox } from '../components/SkillBox';
 import {TbFileExport} from 'react-icons/tb'
-import resume from "../assets/NathanBurdResume.pdf"
+import resume from "../assets/NathanBurd_Resume.pdf"
 import { FloatingNavBar } from "../components/NavigationBar";
 
 //Skills Icon Imports
