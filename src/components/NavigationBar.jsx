@@ -15,7 +15,7 @@ export const FloatingNavBar = (props) => {
         <Logo />
         <NavLink linkTo={"/"} selected={selected === 0} id={0} setSelected={setSelected}>Home</NavLink>
         <NavLink linkTo={"/ProfessionalOverview"} selected={selected === 1} id={1} setSelected={setSelected}>Professional</NavLink>
-        <NavLink linkTo={"/Personal"} selected={selected === 4} id={4} setSelected={setSelected}>Personal</NavLink>
+        {/* <NavLink linkTo={"/Personal"} selected={selected === 4} id={4} setSelected={setSelected}>Personal</NavLink> */}
         <NavLink linkTo={"/ContactMe"} selected={selected === 3} id={3} setSelected={setSelected}>Contact</NavLink>
       </nav>
 
@@ -25,7 +25,7 @@ export const FloatingNavBar = (props) => {
         <NavLink linkTo={"/"} selected={selected === 0} id={0} setSelected={setSelected}>Home</NavLink>
         <NavLink linkTo={"/About"} selected={selected === 2} id={2} setSelected={setSelected}>About</NavLink>
         <NavLink linkTo={"/ProfessionalOverview"} selected={selected === 1} id={1} setSelected={setSelected}>Professional</NavLink>
-        <NavLink linkTo={"/Personal"} selected={selected === 4} id={4} setSelected={setSelected}>Personal</NavLink>
+        {/* <NavLink linkTo={"/Personal"} selected={selected === 4} id={4} setSelected={setSelected}>Personal</NavLink> */}
         <NavLink linkTo={"/ContactMe"} selected={selected === 3} id={3} setSelected={setSelected}>Contact</NavLink>
       </nav>
       
