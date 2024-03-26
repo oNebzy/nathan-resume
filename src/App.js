@@ -37,6 +37,7 @@ import LandingPage from "./screens/LandingPage";
 import Work from "./screens/Work";
 import AboutScreen from "./screens/AboutScreen_Mobile";
 import Contact from "./screens/Contact"
+import Personal from "./screens/Personal";
 //import Skills from "./legacy/Skills";
 
 
@@ -49,10 +50,10 @@ function App() {
       <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<LandingPage/>}></Route>
-            <Route path="/MyWork" element={<Work/>}></Route>
+            <Route path="/ProfessionalOverview" element={<Work/>}></Route>
+            <Route path="/Personal" element={<Personal/>}></Route>
             <Route path="/About" element={<AboutScreen/>}></Route>
             <Route path="/ContactMe" element={<Contact/>}></Route>
-            {/* <Route path="/Skills" element={<Skills/>}></Route> */}
           </Routes>
         
       </AnimatePresence>
