@@ -1,13 +1,5 @@
 import { motion } from "framer-motion";
 
-const Example = () => {
-  return (
-    <div className="grid place-content-center bg-slate-900 px-4 py-12">
-      <SpinningBoxText />
-    </div>
-  );
-};
-
 const SpinningBoxText = () => {
   return (
     <span className="flex flex-col items-center justify-center gap-6 text-5xl font-semibold text-white md:flex-row md:gap-4">
@@ -78,4 +70,4 @@ const Box = ({ front, bottom, back, top }) => {
   );
 };
 
-export default Example;
+export default SpinningBoxText;
