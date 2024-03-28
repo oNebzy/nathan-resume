@@ -11,7 +11,7 @@ const Example = () => {
 const SpinningBoxText = () => {
   return (
     <span className="flex flex-col items-center justify-center gap-6 text-5xl font-semibold text-white md:flex-row md:gap-4">
-      As simple as <Box front="Learn" bottom="Earn" back="Grow" top="Repeat" />
+     <Box front="First" bottom="Second" back="Third" top="Fourth" />
     </span>
   );
 };
