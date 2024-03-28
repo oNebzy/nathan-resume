@@ -1,17 +1,24 @@
 import { motion } from "framer-motion";
 
 const SpinningBoxText = () => {
+
+  const first = <div>first content</div>
+  const second = <div>second content</div>
+  const third = <div>third content</div>
+  const Fourth = <div>Fourth content</div>
+
   return (
     <span className="flex flex-col items-center justify-center gap-6 text-5xl font-semibold text-white md:flex-row md:gap-4">
-     <Box front="First" bottom="Second" back="Third" top="Fourth" />
+     <Box front={first} bottom={second} back={third} top={Fourth} />
     </span>
   );
 };
 
 const Box = ({ front, bottom, back, top }) => {
+
   return (
     <motion.span
-      className="relative h-20 w-72 font-black uppercase"
+      className="relative h-[8rem] w-72 font-black uppercase"
       style={{
         transformStyle: "preserve-3d",
         transformOrigin: "center center -40px",
@@ -43,7 +50,7 @@ const Box = ({ front, bottom, back, top }) => {
 
       {/* BOTTOM */}
       <span
-        style={{ transform: "translateY(5rem) rotateX(-90deg)" }}
+        style={{ transform: "translateY(8rem) rotateX(-90deg)" }}
         className="absolute flex h-full w-full origin-top items-center justify-center border-2 border-indigo-400 bg-indigo-600 text-white"
       >
         {bottom}
@@ -51,7 +58,7 @@ const Box = ({ front, bottom, back, top }) => {
 
       {/* TOP */}
       <span
-        style={{ transform: "translateY(-5rem) rotateX(90deg)" }}
+        style={{ transform: "translateY(-8rem) rotateX(90deg)" }}
         className="absolute flex h-full w-full origin-bottom items-center justify-center border-2 border-indigo-400 bg-indigo-600 text-white"
       >
         {top}
@@ -60,7 +67,7 @@ const Box = ({ front, bottom, back, top }) => {
       {/* BACK */}
       <span
         style={{
-          transform: "translateZ(-5rem) rotateZ(-180deg) rotateY(180deg)",
+          transform: "translateZ(-8rem) rotateZ(-180deg) rotateY(180deg)",
         }}
         className="absolute flex h-full w-full origin-center items-center justify-center border-2 border-indigo-400 bg-indigo-600 text-white"
       >
