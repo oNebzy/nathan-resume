@@ -4,11 +4,6 @@ import { motion, useMotionValue } from "framer-motion";
 const imgs = [
   "/imgs/nature/1.jpg",
   "/imgs/nature/2.jpg",
-  "/imgs/nature/3.jpg",
-  "/imgs/nature/4.jpg",
-  "/imgs/nature/5.jpg",
-  "/imgs/nature/6.jpg",
-  "/imgs/nature/7.jpg",
 ];
 
 const ONE_SECOND = 1000;
@@ -28,6 +23,7 @@ export const SwipeCarousel = () => {
   const dragX = useMotionValue(0);
 
   useEffect(() => {
+    
     const intervalRef = setInterval(() => {
       const x = dragX.get();
 
@@ -42,7 +38,7 @@ export const SwipeCarousel = () => {
     }, AUTO_DELAY);
 
     return () => clearInterval(intervalRef);
-  }, []);
+  }, [dragX]);
 
   const onDragEnd = () => {
     const x = dragX.get();
@@ -89,16 +85,16 @@ const Images = ({ imgIndex }) => {
           <motion.div
             key={idx}
             style={{
-              backgroundImage: `url(${imgSrc})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              
             }}
             animate={{
               scale: imgIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className="aspect-video w-screen shrink-0 rounded-xl bg-neutral-800 object-cover"
-          />
+            className="h-[28rem] w-full shrink-0 rounded-xl bg-neutral-800 "
+          >
+            <div>project content goes here</div>
+          </motion.div>
         );
       })}
     </>
