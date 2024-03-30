@@ -6,10 +6,17 @@ import javascript from "../assets/logos/javascript.png";
 
 import { SwipeCarousel } from '../components/PersonalCarousel';
 import SpinningBoxText from '../components/3dCard';
+import { PersonalProjectCard } from '../components/PersonalProjectCard';
 
 function Personal() {
 
   const isPresent = useIsPresent();
+
+  const projectList = [
+    <PersonalProjectCard title={'test'} stack={'stack'} about={'about'}/>,
+    <PersonalProjectCard title={'test'} stack={'stack'} about={'about'}/>,
+    
+  ]
 
   return (
     <div name="Personal" className="w-full md:h-screen h-fit bg-gradient-to-r from-neutral-800 via-neutral-600 to-neutral-800">
@@ -18,7 +25,7 @@ function Personal() {
 
       {/*Page container */}
       <div className="md:max-w-[75%] md:mx-auto p-5 flex flex-col w-full h-full md:justify-center">
-        <SwipeCarousel/>
+        <SwipeCarousel projectList={projectList}/>
         <SpinningBoxText/>
         <LogoButton navLink={'https://github.com/'} imgRef={javascript}/>
         <LogoButton navLink={'https://linkedin.com/'} imgRef={javascript}/>
