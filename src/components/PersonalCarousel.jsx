@@ -17,7 +17,7 @@ const SPRING_OPTIONS = {
   damping: 50,
 };
 
-export const SwipeCarousel = () => {
+export const SwipeCarousel = ({projectList}) => {
   const [imgIndex, setImgIndex] = useState(0);
 
   const dragX = useMotionValue(0);
@@ -68,7 +68,7 @@ export const SwipeCarousel = () => {
         onDragEnd={onDragEnd}
         className="flex cursor-grab items-center active:cursor-grabbing"
       >
-        <Images imgIndex={imgIndex} />
+        <Images imgIndex={imgIndex} projectList={projectList}/>
       </motion.div>
 
       <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
@@ -77,10 +77,10 @@ export const SwipeCarousel = () => {
   );
 };
 
-const Images = ({ imgIndex }) => {
+const Images = ({ imgIndex, projectList }) => {
   return (
     <>
-      {imgs.map((imgSrc, idx) => {
+      {projectList.map((project, idx) => {
         return (
           <motion.div
             key={idx}
@@ -93,7 +93,7 @@ const Images = ({ imgIndex }) => {
             transition={SPRING_OPTIONS}
             className="h-[28rem] w-full shrink-0 rounded-xl bg-neutral-800 "
           >
-            <div>project content goes here</div>
+            <div>{project}</div>
           </motion.div>
         );
       })}
