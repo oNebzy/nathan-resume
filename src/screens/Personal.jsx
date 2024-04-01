@@ -15,7 +15,8 @@ function Personal() {
   const projectList = [
     <PersonalProjectCard title={'test'} stack={'stack'} about={'about'}/>,
     <PersonalProjectCard title={'test'} stack={'stack'} about={'about'}/>,
-    
+    <PersonalProjectCard title={'test'} stack={'stack'} about={'about'}/>,
+    <PersonalProjectCard title={'test'} stack={'stack'} about={'about'}/>,
   ]
 
   return (
