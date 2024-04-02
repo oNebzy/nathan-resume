@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
-const imgs = [
-  "/imgs/nature/1.jpg",
-  "/imgs/nature/2.jpg",
-];
-
 const ONE_SECOND = 1000;
 const AUTO_DELAY = ONE_SECOND * 10;
 const DRAG_BUFFER = 50;
@@ -18,7 +13,7 @@ const SPRING_OPTIONS = {
 };
 
 export const SwipeCarousel = ({projectList}) => {
-  const [imgIndex, setImgIndex] = useState(0);
+  const [listIndex, setListIndex] = useState(0);
 
   const dragX = useMotionValue(0);
 
@@ -28,8 +23,8 @@ export const SwipeCarousel = ({projectList}) => {
       const x = dragX.get();
 
       if (x === 0) {
-        setImgIndex((pv) => {
-          if (pv === imgs.length - 1) {
+        setListIndex((pv) => {
+          if (pv === projectList.length - 1) {
             return 0;
           }
           return pv + 1;
@@ -38,15 +33,15 @@ export const SwipeCarousel = ({projectList}) => {
     }, AUTO_DELAY);
 
     return () => clearInterval(intervalRef);
-  }, [dragX]);
+  }, [dragX, projectList.length]);
 
   const onDragEnd = () => {
     const x = dragX.get();
 
-    if (x <= -DRAG_BUFFER && imgIndex < imgs.length - 1) {
-      setImgIndex((pv) => pv + 1);
-    } else if (x >= DRAG_BUFFER && imgIndex > 0) {
-      setImgIndex((pv) => pv - 1);
+    if (x <= -DRAG_BUFFER && listIndex < projectList.length - 1) {
+      setListIndex((pv) => pv + 1);
+    } else if (x >= DRAG_BUFFER && listIndex > 0) {
+      setListIndex((pv) => pv - 1);
     }
   };
 
@@ -62,22 +57,22 @@ export const SwipeCarousel = ({projectList}) => {
           x: dragX,
         }}
         animate={{
-          translateX: `-${imgIndex * 100}%`,
+          translateX: `-${listIndex * 100}%`,
         }}
         transition={SPRING_OPTIONS}
         onDragEnd={onDragEnd}
         className="flex cursor-grab items-center active:cursor-grabbing"
       >
-        <Images imgIndex={imgIndex} projectList={projectList}/>
+        <Images listIndex={listIndex} projectList={projectList}/>
       </motion.div>
 
-      <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
+      <Dots listIndex={listIndex} setListIndex={setListIndex} projectList={projectList}/>
       <GradientEdges />
     </div>
   );
 };
 
-const Images = ({ imgIndex, projectList }) => {
+const Images = ({ listIndex, projectList }) => {
   return (
     <>
       {projectList.map((project, idx) => {
@@ -88,7 +83,7 @@ const Images = ({ imgIndex, projectList }) => {
               
             }}
             animate={{
-              scale: imgIndex === idx ? 0.95 : 0.85,
+              scale: listIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
             className="h-[28rem] w-full shrink-0 rounded-xl bg-neutral-800 "
@@ -101,16 +96,16 @@ const Images = ({ imgIndex, projectList }) => {
   );
 };
 
-const Dots = ({ imgIndex, setImgIndex }) => {
+const Dots = ({ listIndex, setListIndex, projectList }) => {
   return (
     <div className="mt-4 flex w-full justify-center gap-2">
-      {imgs.map((_, idx) => {
+      {projectList.map((_, idx) => {
         return (
           <button
             key={idx}
-            onClick={() => setImgIndex(idx)}
+            onClick={() => setListIndex(idx)}
             className={`h-3 w-3 rounded-full transition-colors ${
-              idx === imgIndex ? "bg-neutral-50" : "bg-neutral-500"
+              idx === listIndex ? "bg-neutral-50" : "bg-neutral-500"
             }`}
           />
         );
