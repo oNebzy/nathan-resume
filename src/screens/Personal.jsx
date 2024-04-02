@@ -13,10 +13,26 @@ function Personal() {
   const isPresent = useIsPresent();
 
   const projectList = [
-    <PersonalProjectCard title={'test'} stack={'stack'} about={'about'}/>,
-    <PersonalProjectCard title={'test'} stack={'stack'} about={'about'}/>,
-    <PersonalProjectCard title={'test'} stack={'stack'} about={'about'}/>,
-    <PersonalProjectCard title={'test'} stack={'stack'} about={'about'}/>,
+    <PersonalProjectCard 
+      title={'Portfolio Website'} 
+      stack={'React & TailwindCSS'} 
+      about={'My personal portfolio website. This site was designed and developed entirely by me in order to demonstrate and display my development skills'}
+    />,
+    <PersonalProjectCard 
+      title={'Scratch Golf'} 
+      stack={'React, React Native, TailwindCSS, PostgreSQL(Supabase)'} 
+      about={'A mobile and web golf platform designed to help golfers improve their game. Featuring robust stat tracking for both rounds and practice sessions, this platform aims to give golfers an indepth look into where they can improve.'}
+      />,
+    <PersonalProjectCard 
+      title={'Sample Site 1'} 
+      stack={'Next.js & Sass'} 
+      about={'A sample landing page and website to demonstrate my front end skills'}
+      />,
+    <PersonalProjectCard 
+      title={'Sample Site 2'} 
+      stack={'HTML, CSS, Javascript'} 
+      about={'A sample landing page and website to demonstrate my front end skills'}
+    />,
   ]
 
   return (
