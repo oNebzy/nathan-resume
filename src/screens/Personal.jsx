@@ -5,7 +5,7 @@ import LogoButton from '../components/buttons/LogoButton';
 import javascript from "../assets/logos/javascript.png";
 
 import { SwipeCarousel } from '../components/PersonalCarousel';
-import SpinningBoxText from '../components/3dCard';
+//import SpinningBoxText from '../components/3dCard';
 import { PersonalProjectCard } from '../components/PersonalProjectCard';
 
 function Personal() {
@@ -43,7 +43,6 @@ function Personal() {
       {/*Page container */}
       <div className="md:max-w-[75%] md:mx-auto p-5 flex flex-col w-full h-full md:justify-center">
         <SwipeCarousel projectList={projectList}/>
-        <SpinningBoxText/>
         <LogoButton navLink={'https://github.com/'} imgRef={javascript}/>
         <LogoButton navLink={'https://linkedin.com/'} imgRef={javascript}/>
       </div>
