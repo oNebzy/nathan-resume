@@ -3,10 +3,10 @@ import React from 'react'
 export const PersonalProjectCard = ({title, stack, about}) => {
   console.log(title)
   return (
-    <div className='grid grid-cols-2'>
+    <div className='grid grid-cols-5'>
 
       {/* Left */}
-      <div className='col-span-1'>
+      <div className='col-span-2'>
         {/* title */}
         <div>
           {title}
@@ -24,7 +24,7 @@ export const PersonalProjectCard = ({title, stack, about}) => {
       </div>
       
       {/* Right */}
-      <div className='col-span-1'>
+      <div className='col-span-3'>
         {/* Image(s) / 3d laptop */}
         <div>mock up area</div>
       </div>
